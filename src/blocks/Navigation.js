@@ -33,12 +33,12 @@ export const NavigationMarkup = ({ pageName, toggleIsLoading }) => {
       icon: HomeMajor,
     },
     {
-      onClick: () => navigateTo("/nrt/nrts"),
+      onClick: () => navigateTo("/admin/product"),
       // url: "",
-      label: "NRT",
+      label: "Products",
       icon: ProductsMajor,
       selected: true,
-      subNavigationItems: generateSubNav(pageName, "nrt"),
+      subNavigationItems: generateSubNav(pageName, "products"),
     },
     {
       onClick: () => navigateTo("/everi/all-everi"),

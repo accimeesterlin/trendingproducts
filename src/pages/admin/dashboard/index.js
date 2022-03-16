@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 
 import { Page, Layout, Button, Modal } from "@shopify/polaris";
-import { listNrts } from "@Libs/api-nrt";
+import { listProducts } from "@Libs/api-product";
 import { MainLayout } from "@Blocks";
 import DatesSelection from "./dates-selection";
 import { NRTTable } from "./nrttable";
@@ -10,11 +10,11 @@ const Dashboardpage = () => {
   const [nrts, setNrts] = useState([]);
 
   useEffect(async () => {
-    listNrts()
-      .then(({ data }) => setNrts(data?.listNrts?.items))
+    listProducts()
+      .then(({ data }) => setNrts(data?.listProducts?.items))
       .catch((error) => {
         // Handle fetching nrts
-        // setTotalDonation(data?.listNrts.items);
+        // setTotalDonation(data?.listProducts.items);
       });
   }, []);
   const [active, setActive] = useState(false);
@@ -32,7 +32,7 @@ const Dashboardpage = () => {
 
   return (
     <MainLayout className="dashboard" pageName="Home">
-      <Page title="List of nrts">
+      <Page title="List of dashboard">
         <Layout>
           <Layout.Section>
             <Modal
@@ -40,7 +40,7 @@ const Dashboardpage = () => {
               activator={activator}
               open={active}
               onClose={toggleActive}
-              title="NRTs Dates"
+              title="Products Dates"
               primaryAction={{
                 content: "Apply",
                 onAction: toggleActive,

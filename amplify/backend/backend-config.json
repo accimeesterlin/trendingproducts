@@ -15,7 +15,7 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authtrendingproducts616b1f85"
+                "userPoolId": "authtrendingproductsdbe5cd97"
               }
             }
           ]
@@ -24,17 +24,14 @@
     }
   },
   "auth": {
-    "trendingproducts616b1f85": {
+    "trendingproductsdbe5cd97": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
         "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL",
-          "PHONE_NUMBER"
-        ],
+        "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL"
         ],

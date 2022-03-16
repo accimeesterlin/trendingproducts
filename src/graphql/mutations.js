@@ -7,18 +7,21 @@ export const createProduct = /* GraphQL */ `
     $condition: ModelProductConditionInput
   ) {
     createProduct(input: $input, condition: $condition) {
+      productId
       title
       description
+      productPrice
       sold
       totalReviews
+      imageCover
       images
       followers
       storeName
       videoUrl
       positiveFeedBack
-      id
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -28,18 +31,21 @@ export const updateProduct = /* GraphQL */ `
     $condition: ModelProductConditionInput
   ) {
     updateProduct(input: $input, condition: $condition) {
+      productId
       title
       description
+      productPrice
       sold
       totalReviews
+      imageCover
       images
       followers
       storeName
       videoUrl
       positiveFeedBack
-      id
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -49,18 +55,21 @@ export const deleteProduct = /* GraphQL */ `
     $condition: ModelProductConditionInput
   ) {
     deleteProduct(input: $input, condition: $condition) {
+      productId
       title
       description
+      productPrice
       sold
       totalReviews
+      imageCover
       images
       followers
       storeName
       videoUrl
       positiveFeedBack
-      id
       createdAt
       updatedAt
+      owner
     }
   }
 `;

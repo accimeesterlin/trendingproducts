@@ -19,8 +19,8 @@ export const dashboard = (pageName) => ({
 });
 
 export const nrt = (pageName, router) => ({
-  url: "/nrt/nrts",
-  label: "Nrt",
+  url: "/admin/product",
+  label: "Product",
   icon: ProductsMajor,
   selected: router.pathname.includes("nrt"),
   subNavigationItems: generateSubNav(pageName, "nrt"),
