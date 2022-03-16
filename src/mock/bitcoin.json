@@ -1,0 +1,266 @@
+{
+  "status":"ok",
+  "totalResults":6230,
+  "articles":[
+     {
+        "source":{
+           "id":null,
+           "name":"Uol.com.br"
+        },
+        "author":null,
+        "title":"Esquema de pirâmide | EUA prendem brasileiro acusado de golpe de mais de R$ 100 milhões",
+        "description":"O brasileiro Gutemberg do Santos, que aplicou golpe de R$ 100 milhões com pirâmide financeira Airbit Club, foi preso pela polícia dos EUA",
+        "url":"https://portaldobitcoin.uol.com.br/eua-prendem-brasileiro-que-aplicou-golpe-mundial-com-piramide-de-criptomoedas/",
+        "urlToImage":"https://portaldobitcoin-uol-com-br.exactdn.com/wp-content/uploads/2020/08/gutemberg.jpg?strip=all&lossy=1&ssl=1",
+        "publishedAt":"2020-08-21T17:19:18Z",
+        "content":"Os Estados Unidos prenderam um brasileiro acusado comandar um golpe que provocou prejuízos da ordem de US$ 20 milhões (R$ 100 milhões) em diversos países. Gutemberg dos Santos, que usava nas palestra… [+2510 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Cointelegraph"
+        },
+        "author":"Cointelegraph By Michael Kapilkov",
+        "title":"Bitcoin Balances at a 21 Month Low As Exchange Exodus Continues",
+        "description":"Bitfinex specifically lost 2/3 of its balances within the same timeframe.",
+        "url":"https://cointelegraph.com/news/bitcoin-balances-at-a-21-month-low-as-exchange-exodus-continues",
+        "urlToImage":"https://s3.eu-central-1.amazonaws.com/s3.cointelegraph.com/uploads/2020-08/67d09eac-6edc-4e0f-a28a-aa40d60febe5.jpg",
+        "publishedAt":"2020-08-21T17:15:00Z",
+        "content":"According to data from Glassnode, the exchanges it tracks currently hold 2.6 million Bitcoin. That is the lowest this amount has been since November 2018.\r\nBitcoin balances on exchanges. Source: Glas… [+709 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Seeking Alpha"
+        },
+        "author":"Vandana Singh",
+        "title":"On the hour",
+        "description":"Dow +0.36%.10-yr +0.06%.Euro -0.73% vs. dollar.Crude -2.69% to $41.67.Gold -0.12% to $1,943.70.Bitcoin -1.44% to $11,694.3.",
+        "url":"https://seekingalpha.com/news/3607940-on-hour",
+        "urlToImage":"https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+        "publishedAt":"2020-08-21T17:00:10Z",
+        "content":"Dow +0.36%.\r\n10-yr +0.06%.\r\nEuro -0.73% vs. dollar.\r\nCrude -2.69% to $41.67.\r\nGold -0.12% to $1,943.70.\r\nBitcoin -1.44% to $11,694.3"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Cointelegraph"
+        },
+        "author":"Cointelegraph By Helen Partz",
+        "title":"XRP Is Not a Security, Argues US Congressman Tom Emmer",
+        "description":"The asset still has no official distinction, however.",
+        "url":"https://cointelegraph.com/news/xrp-is-not-a-security-argues-us-congressman-tom-emmer",
+        "urlToImage":"https://s3.cointelegraph.com/storage/uploads/view/cbb4b1256d43987a67d40dff513abb59.jpg",
+        "publishedAt":"2020-08-21T17:00:00Z",
+        "content":"On Aug. 20, Representative Tom Emmer (R-MN) held the first ever Cryptocurrency Town Hall, bringing together a number of leaders from the Blockchain space.\r\nConducted in collaboration with the Chamber… [+2074 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Cointelegraph"
+        },
+        "author":"Cointelegraph By Andrew Singer",
+        "title":"DeFi Be Warned: The Short, Unhappy Life of Yam Finance",
+        "description":"Was Yam Finance’s short-lived rebasing project a useful economic experiment or just another scam? The crypto community is divided.",
+        "url":"https://cointelegraph.com/news/defi-be-warned-the-short-unhappy-life-of-yam-finance",
+        "urlToImage":"https://s3.cointelegraph.com/storage/uploads/view/6bd0e4c055e97f7dd9ed774d9e5542bb.jpg",
+        "publishedAt":"2020-08-21T16:37:00Z",
+        "content":"There are some decentralized finance projects that make flash loans; Yam Finance (YAM) was a DeFi project that made a flash appearance.\r\nYAM, which initially described itself as a minimally viable mo… [+10789 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CoinDesk"
+        },
+        "author":"Paddy Baker",
+        "title":"Bitcoin Mining Facility With Room for 50,000 Rigs Set to Launch in Kazakhstan",
+        "description":"The 180 megawatt facility that will be able to host 50,000 bitcoin mining rigs is set to launch sometime in early September.",
+        "url":"https://www.coindesk.com/bitcoin-mining-facility-rigs-kazakhstan",
+        "urlToImage":"https://static.coindesk.com/wp-content/uploads/2018/04/shutterstock_707316637-e1562665030347.jpg",
+        "publishedAt":"2020-08-21T16:24:34Z",
+        "content":null
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Yahoo Entertainment"
+        },
+        "author":"Paddy Baker",
+        "title":"Bitcoin Mining Facility With Room for 50,000 Rigs Set to Launch in Kazakhstan",
+        "description":"The 180 megawatt facility that will be able to host 50,000 bitcoin mining rigs is set to launch sometime in early September.",
+        "url":"https://finance.yahoo.com/news/bitcoin-mining-facility-room-50-162434332.html",
+        "urlToImage":"https://s.yimg.com/uu/api/res/1.2/A0VnQCxbO.8wJx4m5M4rLA--~B/aD0xMDAwO3c9MTUwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en-US/coindesk_75/1db7bd36ad9b30a16297609e05b16004",
+        "publishedAt":"2020-08-21T16:24:34Z",
+        "content":"One of the largest mining facilities in the world with output to rival a small power station is set to open for business in the mining-friendly country of Kazakhstan in September.<li>Mining facility … [+2291 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"ValueWalk"
+        },
+        "author":"Aswath Damodaran",
+        "title":"Aswath Damodaran Analysis: The Strong (FANGAM) Get Stronger!",
+        "description":"When I started these updates on February 26, 2020, about two weeks after the markets went into free fall, my first six posts were titled “Viral Market Meltdowns”, reflecting the sell off across the globe. About half way through this series, I changed the titl…",
+        "url":"https://www.valuewalk.com/2020/08/fangam-stocks-stronger/",
+        "urlToImage":"https://www.valuewalk.com/wp-content/uploads/2020/08/FANGAM-stocks.jpg",
+        "publishedAt":"2020-08-21T16:18:16Z",
+        "content":"When I started these updates on February 26, 2020, about two weeks after the markets went into free fall, my first six posts were titled “Viral Market Meltdowns”, reflecting the sell off across the g… [+27332 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Yahoo Entertainment"
+        },
+        "author":"Aswath Damodaran",
+        "title":"A Viral Market Update XIII: The Strong (FANGAM) Get Stronger!",
+        "description":"When I started these updates on February 26, 2020, about two weeks after the markets went into free fall, my first six posts were titled \"Viral Market Meltdowns\", reflecting the sell off across the globe. About half way through this series, I changed the titl…",
+        "url":"https://finance.yahoo.com/news/viral-market-xiii-strong-fangam-161653183.html",
+        "urlToImage":"https://s.yimg.com/uu/api/res/1.2/wS5C1wXgu_yi3zRbOSWxiw--~B/aD01MDA7dz03NTA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/insidermonkey.com/9f32da3d15100f9c30b0285e0c51c9b8",
+        "publishedAt":"2020-08-21T16:16:53Z",
+        "content":"When I started these updates on February 26, 2020, about two weeks after the markets went into free fall, my first six posts were titled \"Viral Market Meltdowns\", reflecting the sell off across the g… [+27405 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Geektime.com"
+        },
+        "author":"Geektime",
+        "title":"Weekly Recap of Innovation from the Startup Nation",
+        "description":"COVID or no COVID Israel's high-tech ecosystem just keeps going and going. From agtech advancement to smarter ways of managing organizational networking, Israeli innovation has its touch in everything...",
+        "url":"https://www.geektime.com/israel-tech-ecosystem-weekly-recap/",
+        "urlToImage":"https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "publishedAt":"2020-08-21T16:15:17Z",
+        "content":"The Israeli startup ecosystem is still facing a worthy adversary, as the Coronavirus continues to heavily impact the economy and our day-to-day reality. However, Israeli innovation is still on high d… [+8352 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Yahoo Entertainment"
+        },
+        "author":"Daniel Kuhn",
+        "title":"Blockchain Bites: Bitcoin’s Weary Bulls, ETC’s Action Plan, INX’s IPO",
+        "description":"INX is gearing up for a landmark IPO while 1 billion tether jumped from Tron to Ethereum.",
+        "url":"https://finance.yahoo.com/news/blockchain-bites-bitcoin-weary-bulls-160511350.html",
+        "urlToImage":"https://s.yimg.com/ny/api/res/1.2/sF9XgKHSlPXieRXfxLx8rw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD04NDkuMDY2NjY2NjY2NjY2Nw--/https://s.yimg.com/uu/api/res/1.2/Ekmimpc_nG7E7lcqt0DpTQ--~B/aD0xNTkyO3c9MjQwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-US/coindesk_75/6a787d1cfa2849d319a2af642e6c2053",
+        "publishedAt":"2020-08-21T16:05:11Z",
+        "content":"INX is gearing up for a landmark IPO, 1 billion tether jumped from Tron to Ethereum and a shift in bitcoins options market suggests bullish speculation is beginning to ease.\r\nYoure reading Blockchain… [+7073 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CoinDesk"
+        },
+        "author":"Daniel Kuhn",
+        "title":"Blockchain Bites: Bitcoin’s Weary Bulls, ETC’s Action Plan, INX’s IPO",
+        "description":"INX is set to IPO, 1 billion tether jumped from Tron to Ethereum and a shift in bitcoin's options market suggests bullish speculation is beginning to ease.",
+        "url":"https://www.coindesk.com/blockchain-bites-inx-etc-bitcoins-bulls",
+        "urlToImage":"https://static.coindesk.com/wp-content/uploads/2020/08/brandon-hoogenboom-O1OxhrD_Y0I-unsplash.jpg",
+        "publishedAt":"2020-08-21T16:05:11Z",
+        "content":"INX is gearing up for a landmark IPO, 1 billion tether jumped from Tron to Ethereum and a shift in bitcoin’s options market suggests bullish speculation is beginning to ease.\r\nYoure reading Blockchai… [+7081 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"newsBTC"
+        },
+        "author":"Cole Petersen",
+        "title":"Chainlink Breaks Below Crucial Technical Pattern as Analysts Eye Downside",
+        "description":"Chainlink has expressed some signs of overt weakness throughout the past few hours, with its price reeling down towards its bedrock support at $14.00. This sharp downturn has come about as the entire crypto market shows some signs of weakness, which may be, i…",
+        "url":"https://www.newsbtc.com/2020/08/21/chainlink-breaks-below-crucial-technical-pattern-as-analysts-eye-downside/",
+        "urlToImage":"https://www.newsbtc.com/wp-content/uploads/2020/08/erwan-hesry-IqB5MPcQp6k-unsplash-scaled.jpg",
+        "publishedAt":"2020-08-21T16:00:50Z",
+        "content":"Chainlink has expressed some signs of overt weakness throughout the past few hours, with its price reeling down towards its bedrock support at $14.00.\r\nThis sharp downturn has come about as the entir… [+2488 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Yahoo Entertainment"
+        },
+        "author":"Michael J. Casey",
+        "title":"Money Reimagined: DeFi-ing History",
+        "description":"For clues to the future of decentralized finance, it's useful to look at waves of financial innovation past.",
+        "url":"https://finance.yahoo.com/news/money-reimagined-defi-ing-history-160046201.html",
+        "urlToImage":"https://s.yimg.com/uu/api/res/1.2/Ci.W02y5a.mdPGv2WfBB_A--~B/aD05MDA7dz0xMzUwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en-US/coindesk_75/c95d46d7600dc027f665af5188f26e75",
+        "publishedAt":"2020-08-21T16:00:46Z",
+        "content":"To foretell the future of decentralized finance (DeFi), the exploding new field in which decentralized governance protocols set and execute the terms for lending, borrowing and stablecoin issuance, o… [+18999 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CoinDesk"
+        },
+        "author":"Michael J. Casey",
+        "title":"Money Reimagined: DeFi-ing History",
+        "description":"For clues to the future of decentralized finance, it's useful to look at waves of financial innovation past.",
+        "url":"https://www.coindesk.com/money-reimagined-defi-ing-history",
+        "urlToImage":"https://static.coindesk.com/wp-content/uploads/2020/08/wall-street-1.jpeg",
+        "publishedAt":"2020-08-21T16:00:46Z",
+        "content":"To foretell the future of decentralized finance (DeFi), the exploding new field in which decentralized governance protocols set and execute the terms for lending, borrowing and stablecoin issuance, o… [+19027 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Seeking Alpha"
+        },
+        "author":"Vandana Singh",
+        "title":"On the hour",
+        "description":"Dow +0.20%.10-yr +0.08%.Euro -0.73% vs. dollar.Crude -2.97% to $41.55.Gold +0.04% to $1,947.25.Bitcoin -1.14% to $11,746.3.",
+        "url":"https://seekingalpha.com/news/3607925-on-hour",
+        "urlToImage":"https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+        "publishedAt":"2020-08-21T16:00:05Z",
+        "content":"Dow +0.20%.\r\n10-yr +0.08%.\r\nEuro -0.73% vs. dollar.\r\nCrude -2.97% to $41.55.\r\nGold +0.04% to $1,947.25.\r\nBitcoin -1.14% to $11,746.3"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Yahoo Entertainment"
+        },
+        "author":"Lyllah Ledesma",
+        "title":"Bitcoin News Roundup for Aug. 21, 2020",
+        "description":"With bitcoin still pulling back and LND learning to wumbo, CoinDesk's Markets Daily is back for your latest crypto news roundup!",
+        "url":"https://finance.yahoo.com/news/bitcoin-news-roundup-aug-21-160000982.html",
+        "urlToImage":"https://s.yimg.com/uu/api/res/1.2/ENV3PBMgJa8D2TomHCOQTA--~B/aD05MTY7dz0xNDIwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en-US/coindesk_75/8a144bd53f24ffacecc4cbcc4fca40ba",
+        "publishedAt":"2020-08-21T16:00:00Z",
+        "content":"With bitcoin still pulling back and LND learning to wumbo, CoinDesks Markets Daily is back for your latest crypto news roundup!\r\nFor early access before our regular noon Eastern time releases , subsc… [+1261 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Www.e15.cz"
+        },
+        "author":"Jan Vávra",
+        "title":"Krypto-graf týdne: Spekulanti houfně stahují bitcoiny z burz",
+        "description":"Na účtech kryptoměnových burz leží nejmenší množství bitcoinových mincí za 21 měsíců, upozornila analytická společnost Glassnode. Svědčí to o optimistické náladě jejich držitelů, soudí portál CoinDesk. Čím méně bitcoinů leží na burzách, tím méně jich lze běhe…",
+        "url":"https://www.e15.cz/kryptomeny/krypto-graf-tydne-spekulanti-houfne-stahuji-bitcoiny-z-burz-1372599",
+        "urlToImage":"https://t.cncenter.cz/ras-cz/11-normal690-6507172.jpg?t=LzY5MHg0MDgvc21hcnQvZmlsdGVyczpxdWFsaXR5KDgwKTp3YXRlcm1hcmsocmFzLWN6LzExLW9yaWdpbi02MzU0NzI4LmpwZywxMCwtNDUsMCwxMCwxMCk%3D&h=MWlJXaPV6fvhILqASQ_epA&e=2145916800&v=1",
+        "publishedAt":"2020-08-21T16:00:00Z",
+        "content":"Na útech kryptomnových burz leí nejmení mnoství bitcoinových mincí za 21 msíc, upozornila analytická spolenost Glassnode. Svdí to o optimistické nálad jejich dritel, soudí portál CoinDesk. ím mén bit… [+1352 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CoinDesk"
+        },
+        "author":"Lyllah Ledesma",
+        "title":"Bitcoin News Roundup for Aug. 21, 2020",
+        "description":"With bitcoin still pulling back and LND learning to wumbo, CoinDesk's Markets Daily is back for your latest crypto news roundup!",
+        "url":"https://www.coindesk.com/?p=505845",
+        "urlToImage":"https://static.coindesk.com/wp-content/uploads/2020/07/Markets-Daily-Front-Page-Adam-Lyllah.jpg",
+        "publishedAt":"2020-08-21T16:00:00Z",
+        "content":"With bitcoin still pulling back and LND learning to wumbo, CoinDesk’s Markets Daily is back for your latest crypto news roundup!\r\nFor early access before our regular noon Eastern time releases , subs… [+1434 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Tech Xplore"
+        },
+        "author":"James Riordon",
+        "title":"Foiling illicit cryptocurrency mining with artificial intelligence",
+        "description":"Los Alamos National Laboratory computer scientists have developed a new artificial intelligence (AI) system that may be able to identify malicious codes that hijack supercomputers to mine for cryptocurrency such as Bitcoin and Monero.",
+        "url":"https://techxplore.com/news/2020-08-foiling-illicit-cryptocurrency-artificial-intelligence.html",
+        "urlToImage":"https://scx2.b-cdn.net/gfx/news/2020/foilingillic.jpg",
+        "publishedAt":"2020-08-21T15:54:54Z",
+        "content":"Los Alamos National Laboratory computer scientists have developed a new artificial intelligence (AI) system that may be able to identify malicious codes that hijack supercomputers to mine for cryptoc… [+3397 chars]"
+     }
+  ]
+}

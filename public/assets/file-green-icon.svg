@@ -1,0 +1,8 @@
+<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="data-file-bars-alternate">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M13.586 0C13.8512 5.66374e-05 14.1055 0.105451 14.293 0.293L19.707 5.707C19.8946 5.89449 19.9999 6.14881 20 6.414V22C20 23.1046 19.1046 24 18 24H2C0.89543 24 0 23.1046 0 22V2C0 0.89543 0.89543 0 2 0H13.586ZM17.5 22C17.7761 22 18 21.7761 18 21.5V7.035C18 6.90265 17.9475 6.77571 17.854 6.682L13.318 2.146C13.2243 2.05253 13.0974 2.00003 12.965 2H2.5C2.22386 2 2 2.22386 2 2.5V21.5C2 21.7761 2.22386 22 2.5 22H17.5Z" fill="#16D898"/>
+<rect id="Rectangle" x="5" y="13.5" width="2" height="3.5" rx="0.5" fill="#16D898"/>
+<rect id="Rectangle_2" x="8.5" y="9" width="2" height="8" rx="0.5" fill="#16D898"/>
+<rect id="Rectangle_3" x="12" y="11" width="2" height="6" rx="0.5" fill="#16D898"/>
+</g>
+</svg>

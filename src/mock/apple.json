@@ -1,0 +1,266 @@
+{
+  "status":"ok",
+  "totalResults":2673,
+  "articles":[
+     {
+        "source":{
+           "id":null,
+           "name":"Lifehacker.com"
+        },
+        "author":"David Murphy",
+        "title":"Stop Paying the Apple Tax",
+        "description":"The Apple tax is no joke, but neither is a typical Apple owner’s fear of popping open their systems and feeding their Mac some extra-delicious low-cost memory. But here’s the thing: If you pay Apple for RAM that you can install yourself, you’re wasting money.…",
+        "url":"https://lifehacker.com/dont-buy-overpriced-ram-from-apple-1844778287",
+        "urlToImage":"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/nzm0tm7oepn9uafordzq.jpg",
+        "publishedAt":"2020-08-20T14:00:00Z",
+        "content":"The Apple tax is no joke, but neither is a typical Apple owners fear of popping open their systems and feeding their Mac some extra-delicious low-cost memory. But heres the thing: If you pay Apple fo… [+4154 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Lifehacker.com"
+        },
+        "author":"David Murphy",
+        "title":"Why are People Selling 'Fortnite' iPhones for Thousands of Dollars?",
+        "description":"Desperate times bring out the worst in people—from those who hoarded toilet paper and sold individual rolls for more than $50 each at the start of the COVID-19 quarantine, to those who are now trying to sell crappy iPhones with the Fortnite game installed on …",
+        "url":"https://lifehacker.com/why-are-people-selling-fortnite-iphones-for-thousands-o-1844789101",
+        "urlToImage":"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/hz6euvlkkpdsplyynutr.jpg",
+        "publishedAt":"2020-08-20T19:00:00Z",
+        "content":"Desperate times bring out the worst in peoplefrom those who hoarded toilet paper and sold individual rolls for more than $50 each at the start of the COVID-19 quarantine, to those who are now trying … [+3015 chars]"
+     },
+     {
+        "source":{
+           "id":"the-verge",
+           "name":"The Verge"
+        },
+        "author":"Jon Porter",
+        "title":"Go read this investigation into a flawed contact-tracing app used by one US college",
+        "description":"In investigation by TechCrunch has revealed a range of security problems with a contact tracing app used by one Michigan college. It raises questions about the software other organizations are using.",
+        "url":"https://www.theverge.com/2020/8/20/21376971/contact-tracing-app-albion-college-privacy-concerns-location-data-qr-codes-security-flaws",
+        "urlToImage":"https://cdn.vox-cdn.com/thumbor/nk-drxT0WYuHTTAQw6MhPgi4LK8=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/8792137/acastro_170629_1777_0008_v2.jpg",
+        "publishedAt":"2020-08-20T09:49:49Z",
+        "content":"Security problems were discovered with the mandatory app\r\nIllustration by Alex Castro / The Verge\r\nWhen Albion College announced it would be re-opening back in June it said it would put a number of h… [+2823 chars]"
+     },
+     {
+        "source":{
+           "id":"the-verge",
+           "name":"The Verge"
+        },
+        "author":"Sean Hollister",
+        "title":"Google confirms Android 11 will limit third-party camera apps because of location spying fears",
+        "description":"It’s true: Google is making a change in Android 11 that will force you to use your phone’s built-in camera app for some photo and video opportunities — even if you’ve made another app, like OpenCamera, your default choice for photos. Let’s break it down.",
+        "url":"https://www.theverge.com/2020/8/20/21376391/google-android-11-third-party-camera-picker-intents",
+        "urlToImage":"https://cdn.vox-cdn.com/thumbor/TitqHZKpgtQSS4sZHj26tV0he0U=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/21564182/vpavic_4113_20200721_0058.jpg",
+        "publishedAt":"2020-08-20T19:27:37Z",
+        "content":"Photo by Vjeran Pavic / The Verge\n\n Google is making a change in Android 11 that will force apps that want to take photos or video to use the phone’s built-in camera app — even if you’ve made a diffe… [+5460 chars]"
+     },
+     {
+        "source":{
+           "id":"the-verge",
+           "name":"The Verge"
+        },
+        "author":"Casey Newton",
+        "title":"Facebook’s big QAnon crackdown might have come too late",
+        "description":"After festering on the platform for years, the movement is now bigger than any one social network",
+        "url":"https://www.theverge.com/interface/2020/8/20/21375381/facebook-qanon-purge-content-policy-tide-pods",
+        "urlToImage":"https://cdn.vox-cdn.com/thumbor/BX718uWWEZPX7soTgZg9ibvEjKs=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/15948786/acastro_180720_1777_facebook_0001.jpg",
+        "publishedAt":"2020-08-20T10:00:00Z",
+        "content":"Illustration by Alex Castro / The Verge\n\n Before the Tide Pods challenge was a public health crisis, it was a joke. The laundry detergent capsules, which were originally released in 2012, evolved ove… [+17141 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Ingrid Lunden",
+        "title":"Report: Apple quietly acquired Israel’s Camerai, formerly Tipit, a specialist in AR and camera tech",
+        "description":"Apple is well known for picking up smaller startups on the hush-hush to augment its business, and today news leaked out about the latest of these… nearly two years after the fact. Sometime between 2018 and 2019, the iPhone giant reportedly acquired and shut d…",
+        "url":"http://techcrunch.com/2020/08/20/report-apple-quietly-acquired-israels-camerai-formerly-tipit-a-specialist-in-ar-and-camera-tech/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/08/Screenshot-2020-08-20-at-16.28.07.jpg?w=516",
+        "publishedAt":"2020-08-20T15:32:35Z",
+        "content":"Apple is well known for picking up smaller startups on the hush-hush to augment its business, and today news leaked out about the latest of these… nearly two years after the fact. Sometime between 20… [+4219 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Gizmodo.com"
+        },
+        "author":"Catie Keck",
+        "title":"Google May Be Working on a TV Streaming Hub Called Kaleidoscope",
+        "description":"Google sure seems to be testing or developing a content hub under the name Kaleidoscope, per a dormant landing page that can be seen on Google’s developers browser.Read more...",
+        "url":"https://gizmodo.com/google-may-be-working-on-a-tv-streaming-hub-called-kale-1844794206",
+        "urlToImage":"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/jfudsglv0ip0d6ttr79c.png",
+        "publishedAt":"2020-08-20T22:20:00Z",
+        "content":"Google sure seems to be testing or developing a content hub under the name Kaleidoscope, per a dormant landing page that can be seen on Googles developers browser.\r\nSpotted by Chrome Story at chrome:… [+1561 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Gizmodo.com"
+        },
+        "author":"Whitney Kimball",
+        "title":"Chinese Advertisers Might Have Monetized Your Period",
+        "description":"In a cruel but totally predictable twist, an app that all but guaranteed pregnancy within nine months or-your-money-back was too good to be true.Read more...",
+        "url":"https://gizmodo.com/chinese-advertisers-might-have-monetized-your-period-1844790460",
+        "urlToImage":"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/qssc0mgrytbmgaae9q0s.jpg",
+        "publishedAt":"2020-08-20T19:45:00Z",
+        "content":"In a cruel but totally predictable twist, an app that all but guaranteed pregnancy within nine months or-your-money-back was too good to be true.\r\nA data privacy watchdog has found that a top ovulati… [+4205 chars]"
+     },
+     {
+        "source":{
+           "id":"mashable",
+           "name":"Mashable"
+        },
+        "author":"Morgan Sung",
+        "title":"NYU students use TikTok to expose the school's bleak quarantine meal plan",
+        "description":"Students at New York University are exposing the nightmarish quarantine meals on TikTok, and now the school is going viral for serving food reminiscent of Fyre Festival's infamous \"gourmet\" lunches. \nAmid the ongoing debate over the safety of in-person classe…",
+        "url":"https://mashable.com/article/nyu-quarantine-meals-tiktok-watermelon-chicken/",
+        "urlToImage":"https://mondrian.mashable.com/2020%252F08%252F20%252Fb8%252F364a7b1d6e8a4462a3d423f49a84c68b.60ea3.jpg%252F1200x630.jpg?signature=3SLIhH2yIAWzpyyF-S238U8tKVs=",
+        "publishedAt":"2020-08-20T21:10:21Z",
+        "content":"Students at New York University are exposing the nightmarish quarantine meals on TikTok, and now the school is going viral for serving food reminiscent of Fyre Festival's infamous \"gourmet\" lunches. … [+3895 chars]"
+     },
+     {
+        "source":{
+           "id":"ars-technica",
+           "name":"Ars Technica"
+        },
+        "author":"Kate Cox",
+        "title":"College contact-tracing app readily leaked personal data, report finds",
+        "description":"There are ways to protect privacy in contact-tracing apps... and then there's Albion's.",
+        "url":"https://arstechnica.com/tech-policy/2020/08/college-contact-tracing-app-readily-leaked-personal-data-report-finds/",
+        "urlToImage":"https://cdn.arstechnica.net/wp-content/uploads/2020/06/GettyImages-536024537-760x380.jpg",
+        "publishedAt":"2020-08-20T20:05:03Z",
+        "content":"Enlarge/ A surveillance camera mounted on a wall on a sunny day.\r\n0 with 0 posters participating\r\nIn an attempt to mitigate the potential spread of COVID-19, one Michigan college is requiring all stu… [+5170 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Blog.google"
+        },
+        "author":"Yossi MatiasVP Engineering & Crisis Response Lead",
+        "title":"Mapping wildfires with the power of satellite data",
+        "description":"Ten years ago, I was inside the Google office in Haifa, Israel when the devastating Carmel Mountain fire started blazing not far from us. The team started searching the web to learn more. And while we did find some details confirming what we already knew—a la…",
+        "url":"https://blog.google/products/search/mapping-wildfires-with-satellite-data/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FMKuf+%28The+Keyword+%7C+Official+Google+Blog%29",
+        "urlToImage":"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Wildfires_Satellite_Data_1.max-1300x1300.png",
+        "publishedAt":"2020-08-20T13:00:00Z",
+        "content":"Connecting people to critical information during active wildfires\r\nToday were launching a new wildfire boundary map in Search and Maps SOS alerts in the U.S. to provide deeper insights for areas impa… [+864 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Reuters Editorial",
+        "title":"Apple turns music stars into DJs - Reuters",
+        "description":"Apple is launching two new radio platforms, Apple Music Hits and Apple Music Country, with a few of the world's most famous musicians at the helm.",
+        "url":"https://www.reuters.com/video/watch/idPbt3?now=true",
+        "urlToImage":"https://ajo.prod.reuters.tv/api/v2/img/5f3e873ee4b04d445762de2f-1597933374782?location=LANDSCAPE",
+        "publishedAt":"2020-08-20T15:05:51Z",
+        "content":"Posted \r\nApple is launching two new radio platforms, Apple Music Hits and Apple Music Country, with a few of the world's most famous musicians at the helm."
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Reuters Editorial",
+        "title":"News publishers seek more favorable terms in Apple's app store: WSJ - Reuters",
+        "description":"Major news organizations are joining other companies in pushing for more favorable terms on Apple Inc's app store, the Wall Street Journal reported on Thursday, citing a letter.",
+        "url":"https://www.reuters.com/article/us-apple-app-store-idUSKBN25G2EO",
+        "urlToImage":"https://s3.reutersmedia.net/resources/r/?m=02&d=20200820&t=2&i=1530395256&w=1200&r=LYNXMPEG7J1GM",
+        "publishedAt":"2020-08-20T19:17:00Z",
+        "content":"(Reuters) - Major news organizations are joining other companies in pushing for more favorable terms on Apple Inc’s (AAPL.O) app store, the Wall Street Journal reported on Thursday, citing a letter. … [+480 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Chibuike Oguh",
+        "title":"Global Markets: Asia shares set to dip as Fed's gloom snuffs out Wall Street cheer - Reuters India",
+        "description":"Asian equities were set to follow Wall Street's late session retreat on Thursday after the Federal Reserve warned the U.S. economy faced a highly uncertain path to recovery from the coronavirus-induced downturn.",
+        "url":"https://in.reuters.com/article/global-markets-idINKCN25G07K",
+        "urlToImage":"https://s3.reutersmedia.net/resources/r/?m=02&d=20200820&t=2&i=1530284708&w=1200&r=LYNXNPEG7J03Q",
+        "publishedAt":"2020-08-20T02:28:00Z",
+        "content":"NEW YORK (Reuters) - Asian equities were set to follow Wall Street’s late session retreat on Thursday after the Federal Reserve warned the U.S. economy faced a highly uncertain path to recovery from … [+2870 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Stanley White and Chibuike Oguh",
+        "title":"GLOBAL MARKETS-Asian stocks slump, gold jumps after dovish Fed - Reuters Africa",
+        "description":"Asian equities and U.S. futures fell on Thursday, hurt by the U.S. Federal Reserve's cautious view of the economy, tensions with China and new clusters of coronavirus infections.",
+        "url":"https://af.reuters.com/article/metalsNews/idAFL4N2FM14G",
+        "urlToImage":"https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
+        "publishedAt":"2020-08-20T05:24:00Z",
+        "content":"* Asian stock markets: tmsnrt.rs/2zpUAr4\r\n* Equities weak across Asia in wake of Fed minutes \r\n* China tensions, coronavirus weigh on some markets \r\n* Oil falls, gold rises as sentiment weakens \r\nBy … [+3535 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Stanley White and Chibuike Oguh",
+        "title":"GLOBAL MARKETS-Asian stocks, oil buckle on uncertain U.S. recovery - Reuters Africa",
+        "description":"Asian equities and U.S. futures fell on Thursday, hurt by the U.S. Federal Reserve's cautious view of the economy, tensions with China and new clusters of coronavirus infections.",
+        "url":"https://af.reuters.com/article/metalsNews/idAFL4N2FM01H",
+        "urlToImage":"https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
+        "publishedAt":"2020-08-20T03:08:00Z",
+        "content":"* Asian stock markets: tmsnrt.rs/2zpUAr4\r\n* Equities weak across Asia in wake of Fed minutes \r\n* China tensions, coronavirus weigh on some markets \r\n* Oil falls, gold rises as sentiment weakens \r\nBy … [+3377 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Chibuike Oguh",
+        "title":"Asia shares set to dip as Fed's gloom snuffs out Wall Street cheer - Reuters India",
+        "description":"Asian equities were set to follow Wall Street's late session retreat on Thursday after the Federal Reserve warned the U.S. economy faced a highly uncertain path to recovery from the coronavirus-induced downturn.",
+        "url":"https://in.reuters.com/article/us-global-markets-idINKCN25F2WP",
+        "urlToImage":"https://s2.reutersmedia.net/resources/r/?m=02&d=20200820&t=2&i=1530273369&w=1200&r=LYNXNPEG7J003",
+        "publishedAt":"2020-08-20T00:03:00Z",
+        "content":"NEW YORK (Reuters) - Asian equities were set to follow Wall Street’s late session retreat on Thursday after the Federal Reserve warned the U.S. economy faced a highly uncertain path to recovery from … [+2870 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Stanley White and Chibuike Oguh",
+        "title":"GLOBAL MARKETS-Asian stocks slump, gold jumps after dovish Fed - Reuters Africa",
+        "description":"Asian equities and U.S. futures fell on Thursday, hurt by the U.S. Federal Reserve's cautious view of the economy, tensions with China and new clusters of coronavirus infections.",
+        "url":"https://af.reuters.com/article/commoditiesNews/idAFL4N2FM14G",
+        "urlToImage":"https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
+        "publishedAt":"2020-08-20T05:24:00Z",
+        "content":"* Asian stock markets: tmsnrt.rs/2zpUAr4\r\n* Equities weak across Asia in wake of Fed minutes \r\n* China tensions, coronavirus weigh on some markets \r\n* Oil falls, gold rises as sentiment weakens \r\nBy … [+3535 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Reuters Editorial",
+        "title":"Twitter privacy ruling delayed after dispute among EU regulators - Reuters",
+        "description":"Some European Union regulators objected to Ireland's preliminary ruling in a landmark privacy investigation of Twitter, the lead regulator said on Thursday, triggering a process where a majority decision will be sought.",
+        "url":"https://www.reuters.com/article/us-europe-privacy-twitter-idUSKBN25G1EL",
+        "urlToImage":"https://s4.reutersmedia.net/resources/r/?m=02&d=20200820&t=2&i=1530346843&w=1200&r=LYNXMPEG7J0SS",
+        "publishedAt":"2020-08-20T12:44:00Z",
+        "content":"DUBLIN (Reuters) - Some European Union regulators objected to Ireland’s preliminary ruling in a landmark privacy investigation of Twitter, the lead regulator said on Thursday, triggering a process wh… [+1685 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Yimou Lee",
+        "title":"UPDATE 1-Taiwan July export order growth hits 2-1/2-year high on work-from-home boom - Reuters",
+        "description":"Taiwan's July export orders grew at the strongest pace in two-and-a-half-years, surging on strong demand for telecommuting products, as the coronavirus pandemic forced millions of people around the world to stay home.",
+        "url":"https://www.reuters.com/article/taiwan-economy-orders-idUSL4N2FJ08D",
+        "urlToImage":"https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
+        "publishedAt":"2020-08-20T09:13:00Z",
+        "content":"* July orders +12.4% y/y vs +3.7% in Reuters poll \r\n* Orders from China +16.8% y/y; U.S. +22.2% \r\n* Ministry sees August orders between +5.9% and +9.6% y/y \r\n* Says work-from-home trend a boon for Ta… [+2127 chars]"
+     }
+  ]
+}

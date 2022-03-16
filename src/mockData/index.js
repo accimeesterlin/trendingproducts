@@ -1,0 +1,66 @@
+export const tasks = [
+  "Open Period",
+  "Import Transactions",
+  "Review Transactions",
+  "Review Error Flags",
+  "Review Location Invoices",
+  "Review Charity Statements",
+  "Review Audit Reports",
+  "Process A/R & DropBox",
+  "Close Period",
+  "Etc...",
+  "Etc...",
+  "Etc...",
+];
+
+export const periodStatistic = {
+  period: 202103,
+  total: "$124,175",
+  nrts: "$239,424",
+  average: "$0.48",
+  smallest: "$0.01",
+  largest: "$0.97",
+  STDEV: "4.76123",
+  earliest: "03/01/2021",
+  latest: "03/24/2021",
+  charities: "2,134",
+};
+
+export const vendors = [
+  {
+    date: "04/12/2021",
+    time: "12:45:03",
+    vendor: "NRT",
+    location: "ABC Resort",
+    charity: "24 Foundation",
+    amount: "$0.12",
+    terminal: "12-24985",
+  },
+  {
+    date: "04/12/2021",
+    time: "12:45:03",
+    vendor: "NRT",
+    location: "ZYX Trending Products",
+    charity: "123 Charity",
+    amount: "$0.23",
+    terminal: "492-4994",
+  },
+  {
+    date: "04/12/2021",
+    time: "12:45:03",
+    vendor: "NRT",
+    location: "DEF Trending Products",
+    charity: "443 Charity",
+    amount: "$0.17",
+    terminal: "AA-45835",
+  },
+  {
+    date: "04/12/2021",
+    time: "12:45:03",
+    vendor: "NRT",
+    location: "EFI Resort",
+    charity: "442 Org",
+    amount: "$0.65",
+    terminal: "2453-245",
+  },
+];

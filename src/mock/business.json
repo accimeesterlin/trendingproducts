@@ -1,0 +1,266 @@
+{
+  "status":"ok",
+  "totalResults":70,
+  "articles":[
+     {
+        "source":{
+           "id":"cnn",
+           "name":"CNN"
+        },
+        "author":"Nathaniel Meyersohn, CNN Business",
+        "title":"A possible successor to Jeff Bezos is leaving Amazon - CNN",
+        "description":"Jeff Wilke, a veteran Amazon executive and top lieutenant to its chief Jeff Bezos, is retiring from the company early next year, Amazon announced Friday.",
+        "url":"https://www.cnn.com/2020/08/21/business/amazon-jeff-wilke-departure/index.html",
+        "urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/200821102837-jeff-wilke-amazon-file-restricted-super-tease.jpg",
+        "publishedAt":"2020-08-21T16:11:00Z",
+        "content":"New York (CNN Business)Jeff Wilke, a veteran Amazon(AMZN) executive and top lieutenant to its chief Jeff Bezos, is retiring from the company early next year, Amazon announced Friday.\r\nWilke has heade… [+1304 chars]"
+     },
+     {
+        "source":{
+           "id":"the-wall-street-journal",
+           "name":"The Wall Street Journal"
+        },
+        "author":"Sharon Terlep, Annie Gasparro",
+        "title":"Why Are There Still Not Enough Paper Towels? - The Wall Street Journal",
+        "description":"Blame lean manufacturing. A decadeslong effort to eke out more profit by keeping inventory low left many manufacturers unprepared when Covid-19 struck. And production is unlikely to ramp up significantly any time soon.",
+        "url":"https://www.wsj.com/articles/why-arent-there-enough-paper-towels-11598020793",
+        "urlToImage":"https://images.wsj.net/im-223322/social",
+        "publishedAt":"2020-08-21T14:39:00Z",
+        "content":"The United States of America, heralded as the land of plenty, still doesnt have enough paper towels.\r\nLong after the coronavirus sparked a run on them, retailers cant keep their shelves full. Target.… [+182 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CNBC"
+        },
+        "author":"Diana Olick",
+        "title":"July home sales spike a record 24.7% as prices set a new high - CNBC",
+        "description":"Sales of existing homes soared 24.7% in July from June, according to the National Association of Realtors. The median price of a home sold in July rose 8.5% annually to $304,100.",
+        "url":"https://www.cnbc.com/2020/08/21/july-home-sales-spike-a-record-24point7percent-as-prices-set-a-new-high.html",
+        "urlToImage":"https://image.cnbcfm.com/api/v1/image/106561637-1591103099425gettyimages-1211994561.jpeg?v=1591103175",
+        "publishedAt":"2020-08-21T14:00:00Z",
+        "content":"Sales of existing homes soared 24.7% in July from June, according to the National Association of Realtors. \r\nThat's the strongest monthly gain in the history of the survey, going back to 1968, and th… [+2303 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Kitco NEWS"
+        },
+        "author":"http://www.facebook.com/kitconews",
+        "title":"Gold price remains under pressure following rise in U.S. flash PMI data - Kitco NEWS",
+        "description":"(Kitco News) - Gold prices are off their session lows but still remain under pressure even as sentiment in the manufacturing and service sectors has improved more than expected.",
+        "url":"https://www.kitco.com/news/2020-08-21/Gold-price-remains-under-pressure-following-rise-in-U-S-flash-PMI-data.html",
+        "urlToImage":"https://www.kitco.com/news/2020-08-21/images/Analyzing_Charts_Pen.jpg",
+        "publishedAt":"2020-08-21T13:51:00Z",
+        "content":"Editor's Note: With so much market volatility, stay on top of daily news! Get caught up in minutes with our speedy summary of today's must-read news and expert opinions. Sign up here! \r\n(Kitco News) … [+1254 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Yahoo Entertainment"
+        },
+        "author":"Max Zahn with Andy Serwer",
+        "title":"Will need 'multiple' types of coronavirus vaccines to succeed against pandemic: Top Harvard scientist - Yahoo Finance",
+        "description":"Researchers will need to develop multiple types of coronavirus vaccines to address the immense scale of the outbreak, Harvard University vaccine researcher Dr. Dan Barouch told Yahoo Finance in a recent interview.",
+        "url":"https://finance.yahoo.com/news/multiple-vaccines-necessary-to-defeat-coronavirus-top-harvard-scientist-131716061.html",
+        "urlToImage":"https://s.yimg.com/uu/api/res/1.2/csEG9Tk5XeAutkLAKCYiBQ--~B/aD02NTg7dz0xMTk4O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-08/e97bcd90-e35d-11ea-bb3f-388a23c21c6a",
+        "publishedAt":"2020-08-21T13:17:00Z",
+        "content":"Researchers will need to develop multiple types of coronavirus vaccines to address the immense scale of the outbreak, Harvard University vaccine researcher Dr. Dan Barouch told Yahoo Finance in a rec… [+3585 chars]"
+     },
+     {
+        "source":{
+           "id":"fox-news",
+           "name":"Fox News"
+        },
+        "author":"Daniella Genovese",
+        "title":"Hasbro recalls 52,000 super-powered water guns sold at Target - Fox News",
+        "description":"The decorative stickers on the water tank of the Super Soaker XP 20 and Super Soaker XP 30 \"contain levels of lead in the ink that exceed the federal lead content ban,\" the US Consumer Product Safety Commission said.",
+        "url":"https://www.foxnews.com/health/hasbro-water-guns-target-lead",
+        "urlToImage":"https://static.foxnews.com/foxnews.com/content/uploads/2020/08/super-soaker-xp2030.jpg",
+        "publishedAt":"2020-08-21T13:15:15Z",
+        "content":"Over 52,000 Hasbro water guns sold exclusively at Target have been recalled because of lead-laced stickers that could harm children playing with the summertime toys.\r\nDecorative stickers on the water… [+1251 chars]"
+     },
+     {
+        "source":{
+           "id":"engadget",
+           "name":"Engadget"
+        },
+        "author":"",
+        "title":"Uber and Lyft had time to comply with the law. They did not. - Engadget",
+        "description":"Uber and Lyft continue to fight back against laws that would require them to treat drivers as employees. The law is not on their side.",
+        "url":"https://www.engadget.com/uber-lyft-ab5-gig-economy-130000612.html",
+        "urlToImage":"https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-08%2F561ac820-e386-11ea-ab7a-0a1a3f499274&client=amp-blogside-v2&signature=fb392cfc62427a05bcfc0dddbf2564134cb9e863",
+        "publishedAt":"2020-08-21T13:01:30Z",
+        "content":"The legal drama began last year when California’s legislature signed Assembly Bill 5 (also known as AB5) into law. The intent of the law was to force gig economy companies such as Uber, Lyft and Door… [+9400 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Barron's"
+        },
+        "author":null,
+        "title":"Tesla Stock Is Unstoppable. Here’s What Could Be Going on. - Barron's",
+        "description":"",
+        "url":"https://www.barrons.com/articles/tesla-stock-is-unstoppable-what-could-be-going-on-51598011584",
+        "urlToImage":"https://images.barrons.com/im-222728/social",
+        "publishedAt":"2020-08-21T12:55:00Z",
+        "content":"Last week, two bearish analysts finally threw in the towel on\r\n Tesla,\r\n and the stock hasnt stopped running. The shares have tacked on another $381, or 24%, this week, extending their 2020 gains to … [+10063 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"The Philadelphia Inquirer"
+        },
+        "author":"Rob Tornoe",
+        "title":"Philly relaxing coronavirus restrictions on restaurants and theaters; Trump flouts Pa.’s mask mandate during s - The Philadelphia Inquirer",
+        "description":"The city “will be quick to close restaurants” that do not follow safety guidelines, Philadelphia Health Commissioner Thomas Farley said.",
+        "url":"https://www.inquirer.com/health/coronavirus/live/coronavirus-covid-19-philadelphia-nj-pa-de-cases-testing-updates-news-20200821.html",
+        "urlToImage":"https://www.inquirer.com/resizer/bqulQrynonbSaLWzTCX0IhLoDe4=/1200x0/center/middle/www.inquirer.com/resizer/NllVU8ymITs20OMGdGWUP5YoShk=/0x3:2400x1600/1400x932/cloudfront-us-east-1.images.arcpublishing.com/pmn/66S7SWIFORCX7OCR3FH4KGDTXY.jpg",
+        "publishedAt":"2020-08-21T12:35:31Z",
+        "content":"10:00 AM - August 21, 2020 \r\nLatest 10:00 AM - 08/21/20 \r\nLatest Penn State plans to screen students for coronavirus with a scratch-and-sniff test\r\nIf all goes according to plan, Penn State Universit… [+5686 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Motley Fool"
+        },
+        "author":"Adam Levy",
+        "title":"Is Amazon Actually Losing Market Share? - Motley Fool",
+        "description":"Strong online sales growth from some big competitors disguises the overall market growth.",
+        "url":"https://www.fool.com/investing/2020/08/21/is-amazon-actually-losing-market-share/",
+        "urlToImage":"https://g.foolcdn.com/editorial/images/588779/amazon-trailer.jpg",
+        "publishedAt":"2020-08-21T12:30:00Z",
+        "content":"Competitors are starting to show progress in cutting into Amazon's (NASDAQ:AMZN) massive lead in e-commerce.\r\nWalmart(NYSE:WMT) and Target(NYSE:TGT) reported blowout second-quarter earnings results w… [+3799 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CNBC"
+        },
+        "author":"Lauren Thomas",
+        "title":"Struggling retailers rush to file for bankruptcy as fears of a second wave of coronavirus linger - CNBC",
+        "description":"Another round of retail bankruptcies and liquidations could be coming if a second wave of infections run smack into the holiday shopping season.",
+        "url":"https://www.cnbc.com/2020/08/21/coronavirus-struggling-retailers-rush-to-file-for-bankruptcy-as-fear-of-a-second-wave-lingers.html",
+        "urlToImage":"https://image.cnbcfm.com/api/v1/image/106629743-1595522210653-gettyimages-1217780393-362508440_1-3.jpeg?v=1597846157",
+        "publishedAt":"2020-08-21T12:00:00Z",
+        "content":"Over a two-week span in early July, seven retailers, including The Paper Store, Brooks Brothers and Lucky Brand, filed for bankruptcy protection. \r\nJ.Crew, Neiman Marcus and J.C. Penney and four othe… [+4687 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CNBC"
+        },
+        "author":"Peter Schacknow",
+        "title":"Stocks making the biggest moves in the premarket: Deere, Foot Locker, GE, Pfizer, Tesla & more - CNBC",
+        "description":"The stocks making the biggest moves in premarket trading include Deere, Foot Locker, GE, Pfizer, Tesla, and more.",
+        "url":"https://www.cnbc.com/2020/08/21/stocks-making-the-biggest-moves-in-the-premarket-deere-foot-locker-ge-pfizer-tesla-more.html",
+        "urlToImage":"https://image.cnbcfm.com/api/v1/image/104328711-IMG_2730.JPG?v=1488981160",
+        "publishedAt":"2020-08-21T11:40:00Z",
+        "content":"Take a look at some of the biggest movers in the premarket:\r\nDeere (DE) The heavy equipment maker reported quarterly earnings of $2.57 per share, well above the consensus estimate of $1.26 a share. R… [+3289 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Motley Fool"
+        },
+        "author":"Nicholas Rossolillo",
+        "title":"3 More Stocks That Could Be Worth $1 Trillion In a Decade - Motley Fool",
+        "description":"Long-term winners tend to keep winning. Invest accordingly.",
+        "url":"https://www.fool.com/investing/2020/08/21/3-more-stocks-that-could-be-worth-1-trillion-in-a/",
+        "urlToImage":"https://g.foolcdn.com/editorial/images/588662/7-glass-jars-filled-with-coins-money-savings-diversification.jpg",
+        "publishedAt":"2020-08-21T11:31:00Z",
+        "content":"At this point, companies sporting a $1 trillion market valuation aren't so special. State-backed oil titan Saudi Aramco was valued at $2 trillion shortly after its IPO late in 2019. As of this writin… [+6848 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"Fox Business"
+        },
+        "author":"Reuters",
+        "title":"Tesla seeks approval for sensor that could detect kids left in hot cars - Fox Business",
+        "description":"Tesla Inc. asked the Federal Communications Commission (FCC) for approval to market a short-range interactive motion-sensing device that could help prevent children from being left behind in hot cars and boost theft-prevention systems.",
+        "url":"https://www.foxbusiness.com/technology/tesla-sensor-hot-cars-kids-approval-sought",
+        "urlToImage":"https://a57.foxnews.com/media.foxbusiness.com/BrightCove/854081161001/202008/2006/0/0/854081161001_6180457626001_6180458537001-vs.jpg?ve=1&tl=1",
+        "publishedAt":"2020-08-21T11:24:08Z",
+        "content":"Tesla Inc. asked the Federal Communications Commission (FCC) for approval to market a short-range interactive motion-sensing device that could help prevent children from being left behind in hot cars… [+2041 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"WABC-TV"
+        },
+        "author":null,
+        "title":"NYC gun violence: 3 dead in overnight shootings in Bronx and Brooklyn - WABC-TV",
+        "description":"The surge in gun violence continues across New York City, as there have been 10 shootings with 14 victims Thursday into Friday. Three of those shootings were fatal.",
+        "url":"https://abc7ny.com/shootings-deadly-fatal-brooklyn-shooting/6381589/",
+        "urlToImage":"https://cdn.abcotvs.com/dip/images/6381664_082120-wabc-3-deadly-shootings-tribox-img.jpg?w=1600",
+        "publishedAt":"2020-08-21T11:23:25Z",
+        "content":"NEW YORK CITY (WABC) -- The surge in gun violence continues across New York City, as there have been 10 shootings with 14 victims Thursday into Friday.Three of those shootings were fatal.\r\nThe first … [+2197 chars]"
+     },
+     {
+        "source":{
+           "id":"reuters",
+           "name":"Reuters"
+        },
+        "author":"Medha Singh",
+        "title":"Wall Street set to drop at open; business surveys on deck - Reuters",
+        "description":"Wall Street's main indexes nudged higher on Friday with the tech-heavy Nasdaq notching another record high, as data highlighted the pockets of strength in the U.S. economy.",
+        "url":"https://www.reuters.com/article/us-usa-stocks-idUSKBN25H1E4",
+        "urlToImage":"https://s3.reutersmedia.net/resources/r/?m=02&d=20200821&t=2&i=1530504340&w=1200&r=LYNXMPEG7K0WN",
+        "publishedAt":"2020-08-21T11:09:00Z",
+        "content":"(Reuters) - Wall Street’s main indexes nudged higher on Friday with the tech-heavy Nasdaq notching another record high, as data highlighted the pockets of strength in the U.S. economy. \r\nBusiness act… [+2701 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"MarketWatch"
+        },
+        "author":"Tomi Kilgore",
+        "title":"Deere's stock surges toward record after profit and sales beats, upbeat outlook - MarketWatch",
+        "description":"",
+        "url":"https://www.marketwatch.com/story/deeres-stock-surges-toward-record-after-profit-and-sales-beats-upbeat-outlook-2020-08-21",
+        "urlToImage":"https://s.wsj.net/public/resources/MWimages/MW-GP644_MicroS_ZG_20180906154215.jpg",
+        "publishedAt":"2020-08-21T10:28:00Z",
+        "content":"This replaces and earlier item that had an incorrect year-to-date performance for Deere's stock.\r\nShares of Deere &amp; Co.\r\n DE, \r\n +5.48%\r\nsurged 4.4% toward a record high in premarket trading Frid… [+1300 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CNBC"
+        },
+        "author":"Ryan Browne",
+        "title":"News publishers ask Apple for the same App Store deal it offered Amazon - CNBC",
+        "description":"A growing list of companies are railing against Apple for allegedly anti-competitive rules in its App Store, the most recent being Fortnite maker Epic Games.",
+        "url":"https://www.cnbc.com/2020/08/21/news-publishers-ask-apple-for-the-same-app-store-deal-it-gave-amazon.html",
+        "urlToImage":"https://image.cnbcfm.com/api/v1/image/106638390-1596045819767-gettyimages-1227829000-AFP_1VZ0V8.jpeg?v=1596045877",
+        "publishedAt":"2020-08-21T10:18:00Z",
+        "content":"Apple CEO Tim Cook testifies before the House Judiciary Subcommittee on Antitrust, Commercial and Administrative Law on \"Online Platforms and Market Power\" in the Rayburn House office Building on Cap… [+4606 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"New York Times"
+        },
+        "author":"Matt Phillips",
+        "title":"We Have Crossed the Line Debt Hawks Warned Us About for Decades - The New York Times",
+        "description":"The debt of the United States now exceeds the size of its gross domestic product. That was considered a doomsday scenario that would wreck the economy. So far, that hasn’t happened.",
+        "url":"https://www.nytimes.com/2020/08/21/business/economy/national-debt-coronavirus-stimulus.html",
+        "urlToImage":"https://static01.nyt.com/images/2020/08/20/business/20virus-deficit1/20virus-deficit1-facebookJumbo.jpg",
+        "publishedAt":"2020-08-21T09:00:00Z",
+        "content":"Critics repeatedly said this circular form of fiscal finance in which one arm of the government, the central bank, basically creates the money needed to fund the arm of government that taxes and spen… [+2186 chars]"
+     },
+     {
+        "source":{
+           "id":null,
+           "name":"CleanTechnica"
+        },
+        "author":"https://www.facebook.com/zachary.shahan",
+        "title":"Elon Musk: “Tesla’s Long-Term Competitive Advantage Will Be Manufacturing” - CleanTechnica",
+        "description":"After chatting with Tesla CEO Elon Musk about the breadth, depth, and size of Tesla's Autopilot team, we slipped into another matter, \"the machine that builds the machine.\"",
+        "url":"https://cleantechnica.com/2020/08/21/elon-musk-teslas-long-term-competitive-advantage-will-be-manufacturing/",
+        "urlToImage":"https://cleantechnica.com/files/2020/01/Elon-Musk-CleanTechnica-shirt-Tesla-Model-Y-reveal-scaled.jpg",
+        "publishedAt":"2020-08-21T07:52:30Z",
+        "content":"August 21st, 2020 by Zachary Shahan \r\nAfter chatting with Tesla CEO Elon Musk about the breadth, depth, and size of Tesla’s Autopilot team, we slipped into another matter, “the machine that builds th… [+10427 chars]"
+     }
+  ]
+}

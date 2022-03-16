@@ -1,0 +1,19 @@
+# serverless.yml
+
+# export AWS_PROFILE=CORRECT_LETTRA_PROFILE && export AWS_REGION=us-east-1 
+# export AWS_PROFILE=letraai && export AWS_REGION=us-east-1  OR IF DEFAULT export AWS_PROFILE=default && export AWS_REGION=us-east-1 
+# serverless # make sure to have serverless package install globally in npm
+
+# export  AWS_ACCESS_KEY_ID=accesskey && export AWS_SECRET_ACCESS_KEY=sshhh
+
+
+letraaiCloudfront:
+  component: "@sls-next/serverless-component@1.18.0" 
+  inputs:
+    build: true
+    cloudfront:
+      # if you want to use an existing cloudfront distribution, provide it here
+      # prod and url https://d1ac7y6pztfsi.cloudfront.net
+      distributionId: E3OQ7CQOI30DJ8 
+      # dev and url https://d31vhwm0w2wpbb.cloudfront.net/
+      # distributionId: E24RCXAAV52KVT

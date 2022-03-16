@@ -1,0 +1,93 @@
+/*  Not used but kept for future reference */
+
+body,
+#__next {
+  transition: all 0.2s ease;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  background-color: #f8f8f8;
+  min-width: 100%;
+  min-height: 100%;
+  background: red;
+}
+
+.ibm-plex-regular {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+}
+
+.ibm-plex-medium {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+
+.input-wider {
+  width: 230px;
+}
+
+.smaller {
+  font-size: 70%;
+}
+
+.spacer42 {
+  display: block;
+  width: 1px;
+  height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  user-select: none;
+}
+
+@media (min-width: 1024px) {
+  .spacer42 {
+    margin-top: 42px;
+  }
+}
+
+.main-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.ant-picker-dropdown.timpicker-popup.ant-picker-dropdown-placement-bottomLeft {
+  z-index: 9999 !important;
+}
+
+button.ant-btn.ant-btn-primary.ant-btn-sm {
+  background-color: #16d898;
+  border: 1px solid #16d898;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "IBMPlexSans_Bold";
+  src: url("/fonts/IBMPlexSans/IBMPlexSans-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBMPlexSans_Medium";
+  src: url("/fonts/IBMPlexSans/IBMPlexSans-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBMPlexSans_Regular";
+  src: url("/fonts/IBMPlexSans/IBMPlexSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBMPlexSans_Thin";
+  src: url("/fonts/IBMPlexSans/IBMPlexSans-Thin.ttf");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}

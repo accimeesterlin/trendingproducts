@@ -1,0 +1,26 @@
+body {
+  /* background-color: red; */
+}
+body .amplify-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background: none;
+  border: 2px solid black;
+}
+
+:root {
+  /* Colors */
+  --amazonOrange: #009900; /* Redefined to dark green */
+  --lightAmazonOrange: #340fdb;
+  --darkAmazonOrange: #e88b01;
+  --squidInk: #232f3e;
+  --lightSquidInk: #31465f;
+  --deepSquidInk: #152939;
+  --grey: #828282;
+  --lightGrey: #c4c4c4;
+  --silver: #e1e4ea;
+  --darkBlue: #31465f;
+  --red: #dd3f5b;
+  --white: #ffffff;
+  --light-blue: #00a1c9;
+}

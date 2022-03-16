@@ -1,0 +1,136 @@
+{
+  "status":"ok",
+  "totalResults":10,
+  "articles":[
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Danny Crichton",
+        "title":"Sources say Palantir will have a lockup period after its direct listing",
+        "description":"This morning, we published exclusive, leaked details about Palantir’s much anticipated S-1 filing, including the company’s revenues, margins, operating loss, and government/commercial contract breakdown. Leaked S-1 screenshots show Palantir losing $579M in 20…",
+        "url":"https://techcrunch.com/2020/08/21/sources-say-palantir-will-have-a-lockup-period-after-its-direct-listing/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2019/05/palantir.jpg?w=750",
+        "publishedAt":"2020-08-21T17:15:09Z",
+        "content":"This morning, we published exclusive, leaked details about Palantirs much anticipated S-1 filing, including the companys revenues, margins, operating loss, and government/commercial contract breakdow… [+2405 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Natasha Lomas",
+        "title":"This subscription social network is happy to be an Albatross in a pandemic",
+        "description":"In discussions of ethically dubious social networks Facebook is the usual reference choice. But spare a thought for subscribers of InterNations, a Munich-based social networking community for expats, who have found themselves unable to obtain refunds for full…",
+        "url":"https://techcrunch.com/2020/08/21/this-subscription-social-network-is-happy-to-be-an-albatross-in-a-pandemic/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/08/5019903765_7d5f82d168_k.jpg?w=600",
+        "publishedAt":"2020-08-21T17:14:37Z",
+        "content":"In discussions of ethically dubious social networks Facebook is the usual reference choice. But spare a thought for subscribers of InterNations, a Munich-based social networking community for expats,… [+12193 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Danny Crichton",
+        "title":"How one founder leveraged debt to drive early growth and avoid dilution",
+        "description":"Could SaaS securitization be a future model of debt for startups?",
+        "url":"https://techcrunch.com/2020/08/21/how-one-founder-leveraged-debt-to-drive-early-growth-and-avoid-dilution/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/01/GettyImages-116356014.jpg?w=554",
+        "publishedAt":"2020-08-21T17:02:18Z",
+        "content":"Avi Freedman is like any other founder: He wants to build a great company. In this case network analytics platform Kentik, and he needs venture capital to do it. Like pretty much all founders, he doe… [+1824 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Matt Burns",
+        "title":"Submit your pitch deck to Disrupt 2020's Pitch Deck Teardown",
+        "description":"Disrupt 2020 is a few weeks away and we’re looking for founders to submit their pitch decks. In the Pitch Deck Teardown, top venture capitalists and entrepreneurs will evaluate and suggest fixes for Disrupt 2020 attendees’ pitch decks. First impressions are e…",
+        "url":"https://techcrunch.com/2020/08/21/submit-your-pitch-deck-to-disrupt-2020s-pitch-deck-teardown-2/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2017/09/tcdisrupt_sf17_olfaguard-3492.jpg?w=606",
+        "publishedAt":"2020-08-21T16:24:05Z",
+        "content":"Disrupt 2020 is a few weeks away and we’re looking for founders to submit their pitch decks. In the Pitch Deck Teardown, top venture capitalists and entrepreneurs will evaluate and suggest fixes for … [+2133 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Danny Crichton",
+        "title":"Leaked S-1 screenshots show Palantir losing $579M in 2019",
+        "description":"Palantir filed an S-1 confidentially to the SEC in early July, but we have so far been waiting for the final doc to be published for weeks now with nary a murmur. Now, thanks to some leaked screenshots to TechCrunch from a Palantir shareholder, we might have …",
+        "url":"https://techcrunch.com/2020/08/21/leaked-s-1-screenshots-show-palantir-losing-579m-in-2019/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/08/palantirGettyImages-1180652365.jpg?w=600",
+        "publishedAt":"2020-08-21T15:20:18Z",
+        "content":"Palantir filed an S-1 confidentially to the SEC in early July, but we have so far been waiting for the final doc to be published for weeks now with nary a murmur. Now, thanks to some leaked screensho… [+2820 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Jonathan Shieber",
+        "title":"CarbonChain is using AI to determine the emissions profile of the world's biggest polluters",
+        "description":"It was the Australian bush fire that finally did it. For twelve years Adam Hearne had worked at companies which represented some of the world’s largest sources of greenhouse gas emissions. First at Rio Tinto, one of the largest industrial miners, and then at …",
+        "url":"https://techcrunch.com/2020/08/21/carbonchain-is-using-ai-to-determine-the-emissions-profile-of-the-worlds-biggest-polluters/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2018/05/gettyimages-495112746.jpg?w=568",
+        "publishedAt":"2020-08-21T14:57:42Z",
+        "content":"It was the Australian bush fire that finally did it.\r\nFor twelve years Adam Hearne had worked at companies which represented some of the world’s largest sources of greenhouse gas emissions. First at … [+4183 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Ingrid Lunden",
+        "title":"Medical imaging startup Nanox raises $165.2M as it prepares to list today on Nasdaq",
+        "description":"Less than a month after the Israeli medical imaging startup Nanox raised $59 million in funding and said it was close to going public, the company has now bitten the bullet. Today the company announced that it has raised $165.2 million in an initial public of…",
+        "url":"https://techcrunch.com/2020/08/21/nanox-ipo/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/08/nanox.jpg?w=533",
+        "publishedAt":"2020-08-21T14:56:20Z",
+        "content":"Less than a month after the Israeli medical imaging startup Nanox raised $59 million in funding and said it was close to going public, the company has now bitten the bullet. Today the company announc… [+3477 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Alex Wilhelm",
+        "title":"Unicorn rodeo: 6 high-flying startups that are set to go public",
+        "description":"This week Airbnb announced that it has privately filed to go public, putting the famous unicorn on a path to a quick IPO if it wants. The recent move matches reporting indicating that the home-sharing upstart could yet go public in 2020 despite the collapse o…",
+        "url":"https://techcrunch.com/2020/08/21/unicorn-rodeo-6-high-flying-startups-that-are-set-to-go-public/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3_RD.jpg?w=533",
+        "publishedAt":"2020-08-21T14:35:41Z",
+        "content":"This week Airbnb announced that it has privately filed to go public, putting the famous unicorn on a path to a quick IPO if it wants. The recent move matches reporting indicating that the home-sharin… [+1868 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Sarah Perez",
+        "title":"Trump's official campaign app had to reset its rating after being trolled by TikTokers",
+        "description":"An effort by TikTok users to troll President Trump’s official campaign app with thousands of 1-star reviews appears to have had an impact — if not the impact the pranksters had wanted. In July, Bloomberg reported TikTok activists were flocking to the Official…",
+        "url":"https://techcrunch.com/2020/08/21/trumps-official-campaign-app-had-to-reset-its-rating-after-being-trolled-by-tiktokers/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/05/GettyImages-1226258301.jpg?w=655",
+        "publishedAt":"2020-08-21T14:24:23Z",
+        "content":"An effort by TikTok users to troll President Trump’s official campaign app with thousands of 1-star reviews appears to have had an impact — if not the impact the pranksters had wanted. In July, Bloom… [+6486 chars]"
+     },
+     {
+        "source":{
+           "id":"techcrunch",
+           "name":"TechCrunch"
+        },
+        "author":"Mike Butcher",
+        "title":"As the pandemic creates supply chain chaos, Craft raises $10M to apply some intelligence",
+        "description":"During the COVID-19 pandemic supply chains have suddenly become hot. Who knew that would ever happen? The race to secure PPE, ventilators, minor things like food, was and still is, an enormous issue. But perhaps, predictably, the world of ‘supply chain softwa…",
+        "url":"https://techcrunch.com/2020/08/21/as-the-pandemic-creates-supply-chain-chaos-craft-raises-10m-to-apply-some-intelligence/",
+        "urlToImage":"https://techcrunch.com/wp-content/uploads/2020/05/GettyImages-683975638.jpg?w=600",
+        "publishedAt":"2020-08-21T14:12:27Z",
+        "content":"During the COVID-19 pandemic supply chains have suddenly become hot. Who knew that would ever happen? The race to secure PPE, ventilators, minor things like food, was and still is, an enormous issue.… [+3055 chars]"
+     }
+  ]
+}

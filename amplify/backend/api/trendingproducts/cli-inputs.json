@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "trendingproducts",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/esterlingaccime/Desktop/projects/trending-products/amplify/backend/api/trendingproducts/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authtrendingproducts616b1f85"
+      }
+    ]
+  }
+}
