@@ -59,7 +59,6 @@ export default async function handler(req, res) {
       ...product,
     });
   } catch (error) {
-    console.log("Error: ", error);
     res.status(500).json({
       message: "Error getting product details",
       statusCode: 500,
