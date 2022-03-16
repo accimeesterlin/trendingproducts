@@ -22,14 +22,14 @@ const ProtectedRoute = (props) => {
   const listener = (data) => {
     switch (data.payload.event) {
       case "signIn":
-        router.push("/dashboard");
+        router.push("/admin/dashboard");
         break;
       case "signUp":
         logger.info("user signed up");
-        router.push("/dashboard");
+        router.push("/admin/dashboard");
         break;
       case "signOut":
-        router.push("/dashboard");
+        router.push("/admin/dashboard");
         logger.info("user signed out");
         break;
       case "signIn_failure":

@@ -8,6 +8,7 @@ export const getProduct = /* GraphQL */ `
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -18,7 +19,6 @@ export const getProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -42,6 +42,7 @@ export const listProducts = /* GraphQL */ `
         title
         description
         productPrice
+        productUrl
         sold
         totalReviews
         imageCover
@@ -52,7 +53,6 @@ export const listProducts = /* GraphQL */ `
         positiveFeedBack
         createdAt
         updatedAt
-        owner
       }
       nextToken
     }

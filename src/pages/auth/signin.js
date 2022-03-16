@@ -26,7 +26,7 @@ export function SignIn() {
     try {
       const user = await Auth.currentAuthenticatedUser();
       if (user) {
-        router.push("/dashboard");
+        router.push("/admin/dashboard");
       }
     } catch (error) {
       setView("signin");
@@ -54,7 +54,7 @@ export function SignIn() {
         autoDismiss: true,
       });
       if (user) {
-        router.push("/dashboard");
+        router.push("/admin/dashboard");
       }
     } catch (error) {
       addToast(error?.message, {

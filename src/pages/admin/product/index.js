@@ -1,44 +1,60 @@
-import React, { useState, useEffect, useCallback } from "react";
-
-import { Page, Layout, Button, Modal } from "@shopify/polaris";
-import { listProducts } from "@Libs/api-product";
+import React, { useRef } from "react";
+import { Layout, MediaCard, Page } from "@shopify/polaris";
 import { MainLayout } from "@Blocks";
+import { listProducts } from "@Libs/api-product";
 
-const ProductPage = () => {
-  const [nrts, setNrts] = useState([]);
-
-  useEffect(async () => {
-    listProducts()
-      .then(({ data }) => setNrts(data?.listProducts?.items))
-      .catch((error) => {
-        // Handle fetching nrts
-        // setTotalDonation(data?.listProducts.items);
-      });
-  }, []);
-  const [active, setActive] = useState(false);
-
-  const toggleActive = useCallback(
-    () => setActive((activeItem) => !activeItem),
-    []
+const ProductPage = ({ products }) => {
+  const skipToContentRef = useRef(null);
+  const skipToContentTarget = (
+    // eslint-disable-next-line jsx-a11y/anchor-has-content
+    <a id="SkipToContentTarget" ref={skipToContentRef} tabIndex={-1} />
   );
 
-  const activator = (
-    <Layout.Section>
-      <Button onClick={toggleActive}>Today</Button>
-    </Layout.Section>
-  );
+  const renderCard = (data) =>
+    data.map(({ title, imageCover, productId }) => (
+      <MediaCard
+        key={productId}
+        title={title}
+        description="Discover how Shopify can power up your entrepreneurial journey."
+        popoverActions={[{ content: "Dismiss", onAction: () => {} }]}
+      >
+        <img
+          alt=""
+          width="100%"
+          height="100%"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          src={imageCover}
+        />
+      </MediaCard>
+    ));
 
   return (
-    <MainLayout className="dashboard" pageName="Home">
-      <Page title="List of products">
+    <MainLayout className="dashboard" pageName="Add Product">
+      <Page title="Product">
         <Layout>
-          <Layout.Section oneHalf>
-            <h1>Hello World!!</h1>
-          </Layout.Section>
+          {skipToContentTarget}
+          <Layout.AnnotatedSection
+            title="Product details"
+            description="List of products that are trending."
+          >
+            {renderCard(products)}
+          </Layout.AnnotatedSection>
         </Layout>
       </Page>
     </MainLayout>
   );
 };
+
+export async function getStaticProps() {
+  const { data } = await listProducts();
+  const items = data?.listProducts.items;
+  console.log("Data: ", items);
+
+  return {
+    props: {
+      products: items || [],
+    },
+  };
+}
 
 export default ProductPage;

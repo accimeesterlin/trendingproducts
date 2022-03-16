@@ -29,7 +29,7 @@ export function MultiFactor({ username }) {
     try {
       const user = await Auth.currentAuthenticatedUser();
       if (user) {
-        router.push("/dashboard");
+        router.push("/admin/dashboard");
       }
     } catch (error) {
       setView("multifactor");

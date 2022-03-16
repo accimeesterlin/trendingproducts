@@ -2,12 +2,13 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateProduct = /* GraphQL */ `
-  subscription OnCreateProduct($owner: String) {
-    onCreateProduct(owner: $owner) {
+  subscription OnCreateProduct {
+    onCreateProduct {
       productId
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -18,17 +19,17 @@ export const onCreateProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;
 export const onUpdateProduct = /* GraphQL */ `
-  subscription OnUpdateProduct($owner: String) {
-    onUpdateProduct(owner: $owner) {
+  subscription OnUpdateProduct {
+    onUpdateProduct {
       productId
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -39,17 +40,17 @@ export const onUpdateProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;
 export const onDeleteProduct = /* GraphQL */ `
-  subscription OnDeleteProduct($owner: String) {
-    onDeleteProduct(owner: $owner) {
+  subscription OnDeleteProduct {
+    onDeleteProduct {
       productId
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -60,7 +61,6 @@ export const onDeleteProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;

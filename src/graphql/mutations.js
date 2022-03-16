@@ -11,6 +11,7 @@ export const createProduct = /* GraphQL */ `
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -21,7 +22,6 @@ export const createProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -35,6 +35,7 @@ export const updateProduct = /* GraphQL */ `
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -45,7 +46,6 @@ export const updateProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;
@@ -59,6 +59,7 @@ export const deleteProduct = /* GraphQL */ `
       title
       description
       productPrice
+      productUrl
       sold
       totalReviews
       imageCover
@@ -69,7 +70,6 @@ export const deleteProduct = /* GraphQL */ `
       positiveFeedBack
       createdAt
       updatedAt
-      owner
     }
   }
 `;

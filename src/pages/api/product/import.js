@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     const productTitle = $(".product-title-text").text();
     const sold = $(".product-reviewer-sold").html().replace(/ .*/, "");
     const productPrice = $(".uniform-banner-box-price").text();
-    const reviewsAmount = $(".product-reviewer-reviews")
+    const totalReviews = $(".product-reviewer-reviews")
       .html()
       .replace(/ .*/, "");
     const images = [];
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
 
     // Store Information
     const storeName = $(".store-name").text();
-    const positiveFeedback = $("[data-role='positive-feedback'] > i").html();
+    const positiveFeedBack = $("[data-role='positive-feedback'] > i").html();
     const followers = $(".num-followers > i").html().replace(/ .*/, "");
     // const description = page.evaluate(() => $(".product-description").html());
 
@@ -44,9 +44,10 @@ export default async function handler(req, res) {
       title: productTitle,
       // description,
       productPrice,
+      productUrl: aliUrl,
       sold,
-      reviewsAmount,
-      positiveFeedback,
+      totalReviews,
+      positiveFeedBack,
       storeName,
       followers,
       images,
@@ -55,7 +56,7 @@ export default async function handler(req, res) {
 
     browser.close();
     res.json({
-      data: product,
+      ...product,
     });
   } catch (error) {
     console.log("Error: ", error);
