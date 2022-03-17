@@ -1,13 +1,16 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { Navigation } from "@shopify/polaris";
-import { HomeMajor, ProductsMajor } from "@shopify/polaris-icons";
+import {
+  HomeMajor,
+  ProductsMajor,
+  IncomingMajor,
+} from "@shopify/polaris-icons";
 
 import { generateSubNav } from "@Utils/navigationUtils";
 
 export const NavigationMarkup = ({ pageName, toggleIsLoading }) => {
   const router = useRouter();
-  const disableUpload = true;
 
   const navigateTo = (url) => {
     router.push(url);
@@ -34,7 +37,7 @@ export const NavigationMarkup = ({ pageName, toggleIsLoading }) => {
       onClick: () => navigateTo("/admin/product/import"),
       // url: "",
       label: "Import AliExpress",
-      icon: ProductsMajor,
+      icon: IncomingMajor,
       selected: true,
       subNavigationItems: generateSubNav(pageName, "import"),
     },

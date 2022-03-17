@@ -28,8 +28,37 @@ const ImportProductPage = () => {
         // TODO - give the user a direct link to the product
         addToast("Product successfully imported!", { appearance: "success" });
       } else {
-        const response = await axios(`/api/product/import?aliUrl=${url}`);
-        await createProduct(response?.data);
+        const { data: result } = await axios(
+          `/api/product/import?aliUrl=${url}`
+        );
+
+        const {
+          title,
+          productPrice,
+          sold,
+          totalReviews,
+          positiveFeedBack,
+          storeName,
+          followers,
+          images,
+          imageCover,
+        } = result;
+
+        const payload = {
+          productId,
+          title,
+          // description,
+          productPrice,
+          productUrl: url,
+          sold,
+          totalReviews,
+          positiveFeedBack,
+          storeName,
+          followers,
+          images,
+          imageCover,
+        };
+        await createProduct(payload);
         addToast("Product successfully imported & saved!", {
           appearance: "success",
         });
@@ -38,7 +67,7 @@ const ImportProductPage = () => {
       setUrl("");
     } catch (error) {
       setLoading(false);
-      addToast("Error adding nrt", { appearance: "error" });
+      addToast("Error getting product", { appearance: "error" });
     }
   });
 

@@ -13,7 +13,7 @@ type Product @model {
   totalReviews: Int
   imageCover: String
   images: [String]
-  followers: Int
+  followers: String
   storeName: String
   videoUrl: String
   positiveFeedBack: String

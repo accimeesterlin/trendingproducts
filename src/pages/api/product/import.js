@@ -1,5 +1,6 @@
 const cheerio = require("cheerio");
 const puppeteer = require("puppeteer");
+const numeral = require("numeral");
 
 export default async function handler(req, res) {
   try {
@@ -22,11 +23,16 @@ export default async function handler(req, res) {
     const productId = aliUrl?.match(/\d+/)[0];
 
     const productTitle = $(".product-title-text").text();
-    const sold = $(".product-reviewer-sold").html().replace(/ .*/, "");
+    let sold = $(".product-reviewer-sold").html();
+
+    if (sold) {
+      sold = sold.replace(/ .*/, "");
+    }
     const productPrice = $(".uniform-banner-box-price").text();
-    const totalReviews = $(".product-reviewer-reviews")
-      .html()
-      .replace(/ .*/, "");
+    let totalReviews = $(".product-reviewer-reviews").html();
+    if (totalReviews) {
+      totalReviews = totalReviews.replace(/ .*/, "");
+    }
     const images = [];
     const imageCover = $(".magnifier-image").attr("src");
     $(".images-view-item > img").each((index, element) => {
@@ -36,7 +42,10 @@ export default async function handler(req, res) {
     // Store Information
     const storeName = $(".store-name").text();
     const positiveFeedBack = $("[data-role='positive-feedback'] > i").html();
-    const followers = $(".num-followers > i").html().replace(/ .*/, "");
+    let followers = $(".num-followers > i").html();
+    if (followers) {
+      followers += followers.replace(/ .*/, "");
+    }
     // const description = page.evaluate(() => $(".product-description").html());
 
     const product = {
@@ -49,7 +58,7 @@ export default async function handler(req, res) {
       totalReviews,
       positiveFeedBack,
       storeName,
-      followers,
+      followers: numeral(followers).format("0 a"),
       images,
       imageCover,
     };
@@ -59,6 +68,7 @@ export default async function handler(req, res) {
       ...product,
     });
   } catch (error) {
+    console.log("Error: ", error);
     res.status(500).json({
       message: "Error getting product details",
       statusCode: 500,
