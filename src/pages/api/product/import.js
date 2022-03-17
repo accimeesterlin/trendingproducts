@@ -14,11 +14,11 @@ export default async function handler(req, res) {
         message: "'AliUrl' argument is missing",
       });
     }
-    browser = await chromeAwsLambda.puppeteer.launch({
+    browser = await puppeteer.launch({
       args: chromeAwsLambda.args,
-      defaultViewport: chromeAwsLambda.defaultViewport,
+      // defaultViewport: chromeAwsLambda.defaultViewport,
       executablePath: await chromeAwsLambda.executablePath,
-      headless: chromeAwsLambda.headless,
+      headless: true,
       ignoreHTTPSErrors: true,
     });
     const page = await browser.newPage();

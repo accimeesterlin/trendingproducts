@@ -27,6 +27,13 @@ export const getUser = (userId) =>
     })
   );
 
+export const getUserByEmail = (email) =>
+  API.graphql(
+    graphqlOperation(queries.getUser, {
+      email,
+    })
+  );
+
 export const updateUser = (user, userId) =>
   API.graphql(
     graphqlOperation(mutations.updateUser, {
