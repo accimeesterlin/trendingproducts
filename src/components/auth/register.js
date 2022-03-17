@@ -4,6 +4,7 @@ import { useToasts } from "react-toast-notifications";
 import { Auth } from "aws-amplify";
 
 import { Form, FormLayout, TextField, Button } from "@shopify/polaris";
+import { createUser } from "@Libs/api-user";
 
 export function Register({ setIsMFA, setUsername }) {
   const [email, setEmail] = useState("");
@@ -57,7 +58,7 @@ export function Register({ setIsMFA, setUsername }) {
 
   const registerNewUser = async () => {
     try {
-      const { user } = await Auth.signUp({
+      await Auth.signUp({
         username: email,
         password,
         attributes: {
@@ -67,6 +68,14 @@ export function Register({ setIsMFA, setUsername }) {
         },
         validationData: [], // optional
       });
+
+      const userPayLoad = {
+        email,
+        phone,
+        role: "user",
+      };
+
+      await createUser(userPayLoad);
       setError(false);
       addToast("User successfully registered!", {
         appearance: "success",
@@ -76,7 +85,7 @@ export function Register({ setIsMFA, setUsername }) {
       setIsMFA(true);
     } catch (error) {
       setError(true);
-      addToast(error?.message, {
+      addToast(error?.message || "Error creating up user", {
         appearance: "error",
         autoDismiss: true,
       });

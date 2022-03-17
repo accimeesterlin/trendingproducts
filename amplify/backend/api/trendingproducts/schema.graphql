@@ -21,6 +21,6 @@ type Product @model {
 
 type User @model {
   email: String!
-  phone: Int!
+  phone: String!
   role: String!
 }

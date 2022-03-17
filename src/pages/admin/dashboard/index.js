@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   Page,
@@ -17,7 +17,7 @@ const Dashboardpage = () => {
   useEffect(async () => {
     listProducts()
       .then(({ data }) => setProducts(data?.listProducts?.items))
-      .catch((error) => {
+      .catch(() => {
         // Handle fetching nrts
         // setTotalDonation(data?.listProducts.items);
       });
