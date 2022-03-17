@@ -1,6 +1,6 @@
-const cheerio = require("cheerio");
-const puppeteer = require("puppeteer");
-const numeral = require("numeral");
+import numeral from "numeral";
+import puppeteer from "puppeteer";
+import cheerio from "cheerio";
 
 export default async function handler(req, res) {
   try {

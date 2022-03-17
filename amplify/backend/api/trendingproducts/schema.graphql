@@ -18,3 +18,9 @@ type Product @model {
   videoUrl: String
   positiveFeedBack: String
 }
+
+type User @model {
+  email: String!
+  phone: Int!
+  role: String!
+}

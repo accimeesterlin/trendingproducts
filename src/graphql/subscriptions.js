@@ -64,3 +64,39 @@ export const onDeleteProduct = /* GraphQL */ `
     }
   }
 `;
+export const onCreateUser = /* GraphQL */ `
+  subscription OnCreateUser {
+    onCreateUser {
+      email
+      phone
+      role
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateUser = /* GraphQL */ `
+  subscription OnUpdateUser {
+    onUpdateUser {
+      email
+      phone
+      role
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteUser = /* GraphQL */ `
+  subscription OnDeleteUser {
+    onDeleteUser {
+      email
+      phone
+      role
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;

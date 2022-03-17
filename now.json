@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": "letraai",
+  "alias": "trendingproducts",
   "builds": [
     {
       "src": "next.config.js",
