@@ -1,10 +1,8 @@
 import numeral from "numeral";
 import puppeteer from "puppeteer";
 import cheerio from "cheerio";
-import chromeAwsLambda from "chrome-aws-lambda";
 
 export default async function handler(req, res) {
-  let browser = null;
   try {
     const { aliUrl } = req.query;
 
@@ -14,13 +12,7 @@ export default async function handler(req, res) {
         message: "'AliUrl' argument is missing",
       });
     }
-    browser = await puppeteer.launch({
-      args: chromeAwsLambda.args,
-      // defaultViewport: chromeAwsLambda.defaultViewport,
-      executablePath: await chromeAwsLambda.executablePath,
-      headless: true,
-      ignoreHTTPSErrors: true,
-    });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     await page.goto(aliUrl);
