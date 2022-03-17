@@ -20,7 +20,7 @@ type Product @model {
 }
 
 type User @model {
-  email: String!
+  email: String! @index(name: "byEmail")
   phone: String!
   role: String!
 }
