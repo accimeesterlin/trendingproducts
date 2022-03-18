@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const aliImportUrl = process.env.ALI_IMPORT_URL;
+const aliImportUrl =
+  "https://w8shi2rp09.execute-api.us-east-1.amazonaws.com/aliImport-dev";
 
 export default async function handler(req, res) {
   try {
