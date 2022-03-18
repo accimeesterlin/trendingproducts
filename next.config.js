@@ -1,6 +1,9 @@
 require("dotenv").config();
 
 const nextConfig = {
+  env: {
+    ALI_IMPORT_URL: process.env.ALI_IMPORT_URL,
+  },
   reactStrictMode: true,
   poweredByHeader: false,
   future: {
