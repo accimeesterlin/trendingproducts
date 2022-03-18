@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "trendingproducts56b12231": {}
+      },
+      "function": {
+        "aliImport": {
+          "deploymentBucketName": "amplify-trendingproducts-dev-230531-deployment",
+          "s3Key": "amplify-builds/aliImport-3759514436494b746d52-build.zip"
+        }
       }
     }
   }
