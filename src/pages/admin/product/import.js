@@ -12,6 +12,8 @@ import {
 import { MainLayout } from "@Blocks";
 import { createProduct, getProduct } from "@Libs/api-product";
 
+const endpoint = "https://w8shi2rp09.execute-api.us-east-1.amazonaws.com";
+
 const ImportProductPage = () => {
   const [url, setUrl] = useState("");
   const [loading, setLoading] = useState(false);
@@ -29,7 +31,7 @@ const ImportProductPage = () => {
         addToast("Product successfully imported!", { appearance: "success" });
       } else {
         const { data: result } = await axios(
-          `/api/product/import?aliUrl=${url}`
+          `${endpoint}/aliImport-dev?aliUrl=${url}`
         );
 
         const {
