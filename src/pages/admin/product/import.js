@@ -1,20 +1,21 @@
 import React, { useState, useCallback } from "react";
 import { useToasts } from "react-toast-notifications";
-
+import axios from "axios";
 import SidebarWithHeader from "@Components/sidebar";
+import { FormControl, FormLabel, Input, Button, Box } from "@chakra-ui/react";
 import { createProduct, getProduct } from "@Libs/api-product";
 
 const endpoint = "https://w8shi2rp09.execute-api.us-east-1.amazonaws.com";
 
 const ImportProductPage = () => {
   const [url, setUrl] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const { addToast } = useToasts();
 
   const handleSubmit = useCallback(async () => {
     try {
-      setLoading(true);
+      setIsLoading(true);
       const productId = url?.match(/\d+/)[0];
 
       const { data } = await getProduct(productId);
@@ -57,53 +58,38 @@ const ImportProductPage = () => {
           appearance: "success",
         });
       }
-      setLoading(false);
+      setIsLoading(false);
       setUrl("");
     } catch (error) {
-      setLoading(false);
+      console.log("Error: ", error);
+      setIsLoading(false);
       addToast("Error getting product", { appearance: "error" });
     }
   });
 
   return (
     <SidebarWithHeader className="dashboard" pageName="Add Product">
-      <h1> I am the product import page</h1>
+      <Box bg="white" p={4} m={4}>
+        <FormControl m={4} w="90%">
+          <FormLabel htmlFor="text">AliExpress Product URL</FormLabel>
+          <Input
+            placeholder="Ex: https://www.aliexpress.com/item/33005594727.html"
+            id="text"
+            onChange={({ target }) => setUrl(target.value)}
+            type="text"
+          />
+        </FormControl>
+
+        <Button
+          m={4}
+          isLoading={isLoading}
+          onClick={handleSubmit}
+          colorScheme="blue"
+        >
+          Import
+        </Button>
+      </Box>
     </SidebarWithHeader>
   );
 };
-
-/*
-
-<Page title="Product">
-        <Layout>
-          {skipToContentTarget}
-          <Layout.AnnotatedSection
-            title="AliExpress Product URL"
-            description="Please add the product url from aliexpress"
-          >
-            <Form onSubmit={handleSubmit}>
-              <FormLayout>
-                <Layout.Section>
-                  <TextField
-                    value={url}
-                    onChange={handleUrlChange}
-                    label="URL"
-                    placeholder="Ex: https://www.aliexpress.com/item/4000878553948.html"
-                    type="text"
-                  />
-                </Layout.Section>
-
-                <Layout.Section>
-                  <Button loading={loading} submit>
-                    Import Product
-                  </Button>
-                </Layout.Section>
-              </FormLayout>
-            </Form>
-          </Layout.AnnotatedSection>
-        </Layout>
-      </Page>
-
-*/
-
 export default ImportProductPage;

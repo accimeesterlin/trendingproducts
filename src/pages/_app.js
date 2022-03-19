@@ -3,9 +3,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Head from "next/head";
 import { SWRConfig } from "swr";
 import { ToastProvider } from "react-toast-notifications";
-// import { AppProvider } from "@shopify/polaris";
 import Amplify from "aws-amplify";
-// import enTranslations from "@shopify/polaris/locales/en.json";
 
 import awsconfig from "../aws-exports";
 

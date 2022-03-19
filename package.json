@@ -21,8 +21,6 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@hookform/error-message": "^2.0.0",
-    "@shopify/polaris": "^6.6.0",
-    "@shopify/polaris-icons": "^4.10.0",
     "aws-amplify": "^3.3.27",
     "aws-amplify-react": "^5.1.9",
     "aws-sdk": "^2.922.0",

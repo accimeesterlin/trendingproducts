@@ -1,65 +1,15 @@
-import React, { useState, useCallback } from "react";
-import Link from "next/link";
+import React from "react";
+import SidebarWithHeader from "@Components/sidebar";
+import { Box } from "@chakra-ui/react";
 
-import {
-  Page,
-  Layout,
-  Form,
-  FormLayout,
-  TextField,
-  Button,
-  Card,
-  TextContainer,
-  TextStyle,
-} from "@shopify/polaris";
-
-/*
-  Use Cases
-    - A link to Forgot Password
-    - A Link to Sign up
-    - 
-
-*/
-
-export function ResendConfirmation() {
-  const [code, setCode] = useState("");
-
-  const handleSubmit = () => {
-    // TODO - handle the login email and password
-    setCode("");
-  };
-
-  const handleCodeChange = useCallback((value) => setCode(value), []);
-
+const AddCampaign = () => {
+  console.log("loading...");
   return (
-    <Page narrowWidth>
-      <Layout>
-        <Layout.Section>
-          <Card title="Code Confirmation" sectioned>
-            <Form onSubmit={handleSubmit}>
-              <FormLayout>
-                <TextField
-                  value={code}
-                  onChange={handleCodeChange}
-                  label="Code"
-                  type="text"
-                  autoComplete="text"
-                />
-
-                <Button submit>Verify Code</Button>
-              </FormLayout>
-            </Form>
-            <TextContainer>
-              <TextStyle>Didn't receive code</TextStyle>{" "}
-              <Link href="/auth/signin">
-                <a>Request New Code</a>
-              </Link>
-            </TextContainer>
-          </Card>
-        </Layout.Section>
-      </Layout>
-    </Page>
+    <SidebarWithHeader className="dashboard" pageName="Add Product">
+      <Box bg="white" p={4} m={4}>
+        <h1>I am the Date Selection Page</h1>
+      </Box>
+    </SidebarWithHeader>
   );
-}
-
-export default ResendConfirmation;
+};
+export default AddCampaign;

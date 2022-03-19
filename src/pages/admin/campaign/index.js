@@ -1,17 +1,15 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { useToasts } from "react-toast-notifications";
-import { Page } from "@shopify/polaris";
-import { MainLayout } from "@Blocks";
+import React from "react";
+import SidebarWithHeader from "@Components/sidebar";
+import { Box } from "@chakra-ui/react";
 
-const Campaignpage = () => {
-  console.log("Campaign Page");
+const AddCampaign = () => {
+  console.log("loading...");
   return (
-    <MainLayout className="dashboard" pageName="Campaign">
-      <Page title="Campaign Page">
-        <h1>Under Construction</h1>
-      </Page>
-    </MainLayout>
+    <SidebarWithHeader className="dashboard" pageName="Add Product">
+      <Box bg="white" p={4} m={4}>
+        <h1>I am the Date Selection Page</h1>
+      </Box>
+    </SidebarWithHeader>
   );
 };
-
-export default Campaignpage;
+export default AddCampaign;

@@ -1,37 +1,15 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
+import SidebarWithHeader from "@Components/sidebar";
+import { Box } from "@chakra-ui/react";
 
-import { Page, Layout, Card, TextContainer, TextStyle } from "@shopify/polaris";
-import { Register } from "@Components/auth/register";
-import { MultiFactor } from "@Components/auth/mfa";
-
-export function SignUp() {
-  const [isMFA, setIsMFA] = useState(false);
-  const [username, setUsername] = useState("");
-
+const AddCampaign = () => {
+  console.log("loading...");
   return (
-    <Page narrowWidth>
-      <Layout>
-        <Layout.Section>
-          {isMFA ? (
-            <MultiFactor username={username} />
-          ) : (
-            <Card title="Create An Account" sectioned>
-              <Register setIsMFA={setIsMFA} setUsername={setUsername} />
-              <TextContainer>
-                <TextStyle>
-                  Already have an account? to Trending Products
-                </TextStyle>{" "}
-                <Link href="/">
-                  <a>Log In</a>
-                </Link>
-              </TextContainer>
-            </Card>
-          )}
-        </Layout.Section>
-      </Layout>
-    </Page>
+    <SidebarWithHeader className="dashboard" pageName="Add Product">
+      <Box bg="white" p={4} m={4}>
+        <h1>I am the Date Selection Page</h1>
+      </Box>
+    </SidebarWithHeader>
   );
-}
-
-export default SignUp;
+};
+export default AddCampaign;

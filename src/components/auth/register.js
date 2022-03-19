@@ -1,137 +1,15 @@
-import React, { useState, useCallback, useEffect } from "react";
-import { useRouter } from "next/router";
-import { useToasts } from "react-toast-notifications";
-import { Auth } from "aws-amplify";
+import React from "react";
+import SidebarWithHeader from "@Components/sidebar";
+import { Box } from "@chakra-ui/react";
 
-import { Form, FormLayout, TextField, Button } from "@shopify/polaris";
-import { createUser } from "@Libs/api-user";
-
-export function Register({ setIsMFA, setUsername }) {
-  const [email, setEmail] = useState("");
-  const [isError, setError] = useState(false);
-  const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
-  const [phone, setPhone] = useState("");
-  const router = useRouter();
-  const [view, setView] = useState("");
-  const { addToast } = useToasts();
-
-  const actions = async () => {
-    try {
-      const user = await Auth.currentAuthenticatedUser();
-      if (user) {
-        router.push("/admin/dashboard");
-      }
-    } catch (error) {
-      setView("signup");
-    }
-  };
-
-  useEffect(() => {
-    actions();
-  }, []);
-
-  const handleSubmit = () => {
-    registerNewUser();
-
-    if (!isError) {
-      // resetFields();
-    }
-  };
-
-  const resetFields = () => {
-    setEmail("");
-    setPassword("");
-    setPasswordConfirmation("");
-    setPhone("");
-  };
-
-  const handleChange = {
-    password: useCallback((value) => setPassword(value), []),
-    phone: useCallback((value) => setPhone(value), []),
-    email: useCallback((value) => setEmail(value), []),
-    passwordConfirmation: useCallback(
-      (value) => setPasswordConfirmation(value),
-      []
-    ),
-  };
-
-  const registerNewUser = async () => {
-    try {
-      await Auth.signUp({
-        username: email,
-        password,
-        attributes: {
-          email, // optional
-          phone_number: phone, // optional - E.164 number convention
-          // Other custom attributes...
-        },
-        validationData: [], // optional
-      });
-
-      const userPayLoad = {
-        email,
-        phone,
-        role: "user",
-      };
-
-      await createUser(userPayLoad);
-      setError(false);
-      addToast("User successfully registered!", {
-        appearance: "success",
-        autoDismiss: true,
-      });
-      setUsername(email);
-      setIsMFA(true);
-    } catch (error) {
-      setError(true);
-      addToast(error?.message || "Error creating up user", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    }
-  };
-
-  if (view !== "signup") {
-    return null;
-  }
-
+const RegisterComponent = () => {
+  console.log("loading...");
   return (
-    <Form onSubmit={handleSubmit}>
-      <FormLayout>
-        <TextField
-          value={email}
-          onChange={handleChange.email}
-          label="Email"
-          type="email"
-          autoComplete="email"
-        />
-
-        <TextField
-          value={password}
-          onChange={handleChange.password}
-          label="Password"
-          type="password"
-          autoComplete="password"
-        />
-        <TextField
-          value={passwordConfirmation}
-          onChange={handleChange.passwordConfirmation}
-          label="Confirm Password"
-          type="password"
-          autoComplete="password"
-        />
-        <TextField
-          value={phone}
-          onChange={handleChange.phone}
-          label="Phone"
-          type="text"
-          autoComplete="text"
-        />
-        <Button submit>Create an Account</Button>
-      </FormLayout>
-    </Form>
+    <SidebarWithHeader className="dashboard" pageName="Add Product">
+      <Box bg="white" p={4} m={4}>
+        <h1>I am the Date Selection Page</h1>
+      </Box>
+    </SidebarWithHeader>
   );
-}
-
-export default Register;
+};
+export default RegisterComponent;

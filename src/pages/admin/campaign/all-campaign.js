@@ -1,207 +1,95 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { useToasts } from "react-toast-notifications";
-import {
-  Button,
-  Card,
-  ResourceList,
-  Avatar,
-  ResourceItem,
-  TextStyle,
-  TextField,
-  Filters,
-  Page,
-} from "@shopify/polaris";
-import { MainLayout } from "@Blocks";
-import { getAllCampaign, deleteCampaignById } from "@Libs";
+import axios from "axios";
+import SidebarWithHeader from "@Components/sidebar";
+import { FormControl, FormLabel, Input, Button, Box } from "@chakra-ui/react";
+import { createProduct, getProduct } from "@Libs/api-product";
 
-const AllCampaignPage = () => {
+const endpoint = "https://w8shi2rp09.execute-api.us-east-1.amazonaws.com";
+
+const CampaignPage = () => {
+  const [url, setUrl] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
   const { addToast } = useToasts();
-  const [campaign, setCampaign] = useState([]);
 
-  const fetchAllCampaign = () => {
-    getAllCampaign()
-      .then((response) => {
-        setCampaign(response.campaign);
-      })
-      .catch(() =>
-        addToast("Error retrieving Campaign", { appearance: "error" })
-      );
-  };
+  const handleSubmit = useCallback(async () => {
+    try {
+      setIsLoading(true);
+      const productId = url?.match(/\d+/)[0];
 
-  useEffect(() => fetchAllCampaign(), []);
+      const { data } = await getProduct(productId);
+      if (data?.getProduct) {
+        // TODO - give the user a direct link to the product
+        addToast("Product successfully imported!", { appearance: "success" });
+      } else {
+        const { data: result } = await axios(
+          `${endpoint}/aliImport-dev?aliUrl=${url}`
+        );
 
-  const [selectedItems, setSelectedItems] = useState(campaign || []);
-  const [sortValue, setSortValue] = useState("DATE_MODIFIED_DESC");
-  const [taggedWith, setTaggedWith] = useState("");
-  const [queryValue, setQueryValue] = useState(null);
+        const {
+          title,
+          productPrice,
+          sold,
+          totalReviews,
+          positiveFeedBack,
+          storeName,
+          followers,
+          images,
+          imageCover,
+        } = result;
 
-  const handleTaggedWithChange = useCallback(
-    (value) => setTaggedWith(value),
-    []
-  );
-  const handleQueryValueChange = useCallback(
-    (value) => setQueryValue(value),
-    []
-  );
-  const handleTaggedWithRemove = useCallback(() => setTaggedWith(null), []);
-  const handleQueryValueRemove = useCallback(() => setQueryValue(null), []);
-  const handleClearAll = useCallback(() => {
-    handleTaggedWithRemove();
-    handleQueryValueRemove();
-  }, [handleQueryValueRemove, handleTaggedWithRemove]);
-
-  const resourceName = {
-    singular: "Campaign",
-    plural: "Campaign",
-  };
-  const promotedBulkActions = [
-    {
-      content: "Edit Campaign",
-      onAction: () => console.log("Todo: implement bulk edit"),
-    },
-  ];
-
-  const bulkActions = [
-    {
-      content: "Add tags",
-      onAction: () => console.log("Todo: implement bulk add tags"),
-    },
-    {
-      content: "Remove tags",
-      onAction: () => console.log("Todo: implement bulk remove tags"),
-    },
-    {
-      content: "Delete Campaign",
-      onAction: () => {
-        console.log("Todo: implement bulk delete");
-        console.log("Selected Items: ", selectedItems);
-        deleteCampaignById(selectedItems[0])
-          .then(() => {
-            setSelectedItems([]);
-            addToast("Campaign successfully deleted", {
-              appearance: "success",
-            });
-            fetchAllCampaign();
-          })
-          .catch(() =>
-            addToast("Error retrieving Campaign", { appearance: "error" })
-          );
-      },
-    },
-  ];
-
-  const filters = [
-    {
-      key: "taggedWith3",
-      label: "Tagged with",
-      filter: (
-        <TextField
-          label="Tagged with"
-          value={taggedWith}
-          onChange={handleTaggedWithChange}
-          labelHidden
-        />
-      ),
-      shortcut: true,
-    },
-  ];
-
-  const appliedFilters = !isEmpty(taggedWith)
-    ? [
-        {
-          key: "taggedWith3",
-          label: disambiguateLabel("taggedWith3", taggedWith),
-          onRemove: handleTaggedWithRemove,
-        },
-      ]
-    : [];
-
-  const filterControl = (
-    <Filters
-      queryValue={queryValue}
-      filters={filters}
-      appliedFilters={appliedFilters}
-      onQueryChange={handleQueryValueChange}
-      onQueryClear={handleQueryValueRemove}
-      onClearAll={handleClearAll}
-    >
-      <div style={{ paddingLeft: "8px" }}>
-        <Button onClick={() => console.log("New filter saved")}>Save</Button>
-      </div>
-    </Filters>
-  );
+        const payload = {
+          productId,
+          title,
+          // description,
+          productPrice,
+          productUrl: url,
+          sold,
+          totalReviews,
+          positiveFeedBack,
+          storeName,
+          followers,
+          images,
+          imageCover,
+        };
+        await createProduct(payload);
+        addToast("Product successfully imported & saved!", {
+          appearance: "success",
+        });
+      }
+      setIsLoading(false);
+      setUrl("");
+    } catch (error) {
+      console.log("Error: ", error);
+      setIsLoading(false);
+      addToast("Error getting product", { appearance: "error" });
+    }
+  });
 
   return (
-    <MainLayout className="Campaign" pageName="All Campaign">
-      <Page title="All Campaign">
-        <Card>
-          <ResourceList
-            resourceName={resourceName}
-            items={campaign}
-            renderItem={renderItem}
-            selectedItems={selectedItems}
-            onSelectionChange={setSelectedItems}
-            promotedBulkActions={promotedBulkActions}
-            bulkActions={bulkActions}
-            sortValue={sortValue}
-            sortOptions={[
-              { label: "Newest update", value: "DATE_MODIFIED_DESC" },
-              { label: "Oldest update", value: "DATE_MODIFIED_ASC" },
-            ]}
-            onSortChange={(selected) => {
-              setSortValue(selected);
-              console.log(`Sort option changed to ${selected}.`);
-            }}
-            filterControl={filterControl}
+    <SidebarWithHeader className="dashboard" pageName="Add Product">
+      <Box bg="white" p={4} m={4}>
+        <FormControl m={4} w="90%">
+          <FormLabel htmlFor="text">AliExpress Product URL</FormLabel>
+          <Input
+            placeholder="Ex: https://www.aliexpress.com/item/33005594727.html"
+            id="text"
+            onChange={({ target }) => setUrl(target.value)}
+            type="text"
           />
-        </Card>
-      </Page>
-    </MainLayout>
+        </FormControl>
+
+        <Button
+          m={4}
+          isLoading={isLoading}
+          onClick={handleSubmit}
+          colorScheme="blue"
+        >
+          Import
+        </Button>
+      </Box>
+    </SidebarWithHeader>
   );
-
-  function renderItem(item) {
-    const { CampaignID, CampaignName, CampaignDesc } = item;
-    const media = <Avatar customer size="medium" name={CampaignName} />;
-    const shortcutActions = CampaignID
-      ? [
-          {
-            content: "View latest Campaign",
-            url: `/Campaign/${CampaignID}`,
-          },
-        ]
-      : null;
-    return (
-      <ResourceItem
-        id={CampaignID}
-        url={CampaignID}
-        media={media}
-        accessibilityLabel={`View details for ${CampaignName}`}
-        shortcutActions={shortcutActions}
-        persistActions
-      >
-        <h3>
-          <TextStyle variation="strong">{CampaignName}</TextStyle>
-        </h3>
-        <div>CampaignDesc: {CampaignDesc}</div>
-      </ResourceItem>
-    );
-  }
-
-  function disambiguateLabel(key, value) {
-    switch (key) {
-      case "taggedWith3":
-        return `Tagged with ${value}`;
-      default:
-        return value;
-    }
-  }
-
-  function isEmpty(value) {
-    if (Array.isArray(value)) {
-      return value.length === 0;
-    }
-    return value === "" || value == null;
-  }
 };
-
-export default AllCampaignPage;
+export default CampaignPage;

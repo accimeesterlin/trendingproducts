@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Box,
-  CloseButton,
-  Flex,
-  useColorModeValue,
-  Text,
-} from "@chakra-ui/react";
+import { Box, CloseButton, Flex, useColorModeValue } from "@chakra-ui/react";
 
 import {
   FiHome,
