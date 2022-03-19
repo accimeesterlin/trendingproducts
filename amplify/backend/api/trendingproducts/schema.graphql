@@ -23,4 +23,6 @@ type User @model {
   email: String! @index(name: "byEmail")
   phone: String!
   role: String!
+  firstName: String!
+  lastName: String!
 }

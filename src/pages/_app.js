@@ -1,20 +1,30 @@
 import React from "react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Head from "next/head";
 import { SWRConfig } from "swr";
 import { ToastProvider } from "react-toast-notifications";
-import { AppProvider } from "@shopify/polaris";
+// import { AppProvider } from "@shopify/polaris";
 import Amplify from "aws-amplify";
-import enTranslations from "@shopify/polaris/locales/en.json";
-import "@shopify/polaris/dist/styles.css";
-import "../styles/reset.css";
+// import enTranslations from "@shopify/polaris/locales/en.json";
 
 import awsconfig from "../aws-exports";
 
 Amplify.configure(awsconfig);
 
+// 2. Extend the theme to include custom colors, fonts, etc
+const colors = {
+  brand: {
+    900: "#1a365d",
+    800: "#153e75",
+    700: "#2a69ac",
+  },
+};
+
+const theme = extendTheme({ colors });
+
 function MyApp({ Component, pageProps }) {
   return (
-    <AppProvider theme={{ colorScheme: "light" }} i18n={enTranslations}>
+    <ChakraProvider theme={theme}>
       <Head>
         <title>Trending Products</title>
         <meta charSet="utf-8" />
@@ -26,7 +36,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </SWRConfig>
       </ToastProvider>
-    </AppProvider>
+    </ChakraProvider>
   );
 }
 

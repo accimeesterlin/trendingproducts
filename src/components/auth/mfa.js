@@ -8,18 +8,20 @@ import { useToasts } from "react-toast-notifications";
 import { Auth } from "aws-amplify";
 
 import {
-  Form,
-  FormLayout,
-  TextField,
+  Flex,
+  FormControl,
+  FormLabel,
+  Input,
+  Stack,
   Button,
-  Card,
-  TextContainer,
-  TextStyle,
-} from "@shopify/polaris";
+  Heading,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 export function MultiFactor({ username }) {
   const [code, setCode] = useState("");
   const [isError, setError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const [view, setView] = useState("");
   const { addToast } = useToasts();
@@ -48,20 +50,19 @@ export function MultiFactor({ username }) {
     }
   };
 
-  const handleChange = {
-    code: useCallback((value) => setCode(value), []),
-  };
-
   const confirmSignUp = async () => {
     try {
+      setIsLoading(true);
       await Auth.confirmSignUp(username, code);
       setError(false);
       addToast("User has been confirmed", {
         appearance: "success",
         autoDismiss: true,
       });
-      router.push("/auth/signin");
+      setIsLoading(false);
+      router.push("/signin");
     } catch (error) {
+      setIsLoading(false);
       setError(true);
       addToast(error?.message, {
         appearance: "error",
@@ -91,26 +92,58 @@ export function MultiFactor({ username }) {
   }
 
   return (
-    <Card title="Code Verification" sectioned>
-      <Form onSubmit={handleSubmit}>
-        <FormLayout>
-          <TextField
-            value={code}
-            onChange={handleChange.code}
-            label="Code"
+    <Flex
+      minH="100vh"
+      align="center"
+      justify="center"
+      bg={useColorModeValue("gray.50", "gray.800")}
+    >
+      <Stack
+        spacing={4}
+        w="full"
+        maxW="md"
+        bg={useColorModeValue("white", "gray.700")}
+        rounded="xl"
+        boxShadow="lg"
+        p={6}
+        my={12}
+      >
+        <Heading lineHeight={1.1} fontSize={{ base: "2xl", md: "3xl" }}>
+          Code
+        </Heading>
+        <FormControl id="email" isRequired>
+          <FormLabel>Enter Code</FormLabel>
+          <Input
+            placeholder="Ex: 759743 "
+            onChange={({ target }) => setCode(target.value)}
+            _placeholder={{ color: "gray.500" }}
             type="text"
-            autoComplete="text"
           />
-          <Button submit>Verify Code</Button>
-        </FormLayout>
-      </Form>
-      <TextContainer>
-        <TextStyle>Resend verification code?</TextStyle>{" "}
-        <Link href="#">
-          <a onClick={resentConfirmationCode}>Resend</a>
-        </Link>
-      </TextContainer>
-    </Card>
+        </FormControl>
+        <Stack
+          direction={{ base: "column", sm: "row" }}
+          align="start"
+          justify="space-between"
+        >
+          <a color="blue.400" onClick={resentConfirmationCode}>
+            Resend Code
+          </a>
+        </Stack>
+        <Stack spacing={6}>
+          <Button
+            bg="blue.400"
+            color="white"
+            isLoading={isLoading}
+            onClick={confirmSignUp}
+            _hover={{
+              bg: "blue.500",
+            }}
+          >
+            Submit Code
+          </Button>
+        </Stack>
+      </Stack>
+    </Flex>
   );
 }
 

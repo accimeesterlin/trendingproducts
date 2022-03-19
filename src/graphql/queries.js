@@ -64,6 +64,8 @@ export const getUser = /* GraphQL */ `
       email
       phone
       role
+      firstName
+      lastName
       id
       createdAt
       updatedAt
@@ -81,6 +83,8 @@ export const listUsers = /* GraphQL */ `
         email
         phone
         role
+        firstName
+        lastName
         id
         createdAt
         updatedAt

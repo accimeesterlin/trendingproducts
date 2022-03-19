@@ -9,7 +9,7 @@ function ProductPage({ products }) {
   console.log("product search page...");
   return (
     <SidebarWithHeader className="dashboard" pageName="Add Product">
-      <h1>I am the search all products page</h1>
+      <h1>I am the settings page</h1>
     </SidebarWithHeader>
   );
 }

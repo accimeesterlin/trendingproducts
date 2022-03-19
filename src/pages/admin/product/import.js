@@ -1,15 +1,7 @@
-import React, { useState, useCallback, useRef } from "react";
+import React, { useState, useCallback } from "react";
 import { useToasts } from "react-toast-notifications";
-import axios from "axios";
-import {
-  TextField,
-  Form,
-  FormLayout,
-  Layout,
-  Button,
-  Page,
-} from "@shopify/polaris";
-import { MainLayout } from "@Blocks";
+
+import SidebarWithHeader from "@Components/sidebar";
 import { createProduct, getProduct } from "@Libs/api-product";
 
 const endpoint = "https://w8shi2rp09.execute-api.us-east-1.amazonaws.com";
@@ -73,17 +65,16 @@ const ImportProductPage = () => {
     }
   });
 
-  const handleUrlChange = useCallback((value) => setUrl(value), []);
-
-  const skipToContentRef = useRef(null);
-  const skipToContentTarget = (
-    // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a id="SkipToContentTarget" ref={skipToContentRef} tabIndex={-1} />
-  );
-
   return (
-    <MainLayout className="dashboard" pageName="Add Product">
-      <Page title="Product">
+    <SidebarWithHeader className="dashboard" pageName="Add Product">
+      <h1> I am the product import page</h1>
+    </SidebarWithHeader>
+  );
+};
+
+/*
+
+<Page title="Product">
         <Layout>
           {skipToContentTarget}
           <Layout.AnnotatedSection
@@ -112,8 +103,7 @@ const ImportProductPage = () => {
           </Layout.AnnotatedSection>
         </Layout>
       </Page>
-    </MainLayout>
-  );
-};
+
+*/
 
 export default ImportProductPage;
