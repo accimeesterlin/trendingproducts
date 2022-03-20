@@ -14,10 +14,10 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { v4 as uuidv4 } from "uuid";
 import { Auth } from "aws-amplify";
 import { useToasts } from "react-toast-notifications";
 import { useState } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { createUser } from "@Libs/api-user";
@@ -36,7 +36,6 @@ export default function SignupCard() {
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [view, setView] = useState(""); // TODO - handle with the different view here
   const [isError, setError] = useState(false);
-  const router = useRouter();
 
   // TODO - Verify if email already exists
   // If so, then let them know with a toast message
@@ -64,12 +63,15 @@ export default function SignupCard() {
       });
 
       const userPayLoad = {
+        userId: uuidv4(),
         email,
         phone,
         role: "user",
         firstName,
         lastName,
         isPlanActive: false,
+        createdAt: new Date(),
+        updatedAt: new Date(),
       };
 
       await createUser(userPayLoad);

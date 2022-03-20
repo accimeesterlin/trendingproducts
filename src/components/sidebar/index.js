@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Box,
   useColorModeValue,
@@ -7,13 +7,28 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Protected from "@Blocks/protected";
-
+import { Auth } from "aws-amplify";
+import { getUserByEmail } from "@Libs";
+import { userStore } from "@Components/stores";
 import { MobileNav } from "./mobilenav";
 import { SidebarContent } from "./sidebarcontent";
 
 export default function SidebarWithHeader({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { setUser, isInit, setIsInit } = userStore((state) => state);
 
+  // TODO - protect the admin route so user doesn't go there
+
+  // itinializing the app
+  useEffect(async () => {
+    if (!isInit) {
+      const { attributes } = await Auth.currentAuthenticatedUser();
+      const { data } = await getUserByEmail(attributes?.email);
+      const currentUser = data?.userByEmail?.items[0];
+      setUser(currentUser);
+      setIsInit(true);
+    }
+  }, []);
   return (
     <Protected>
       <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>

@@ -1,9 +1,10 @@
-import React from "react";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { ChakraProvider, extendTheme, Progress } from "@chakra-ui/react";
 import Head from "next/head";
 import { SWRConfig } from "swr";
 import { ToastProvider } from "react-toast-notifications";
 import Amplify from "aws-amplify";
+import { useRouter } from "next/router";
 
 import awsconfig from "../aws-exports";
 
@@ -21,6 +22,24 @@ const colors = {
 const theme = extendTheme({ colors });
 
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  const start = () => setLoading(true);
+  const stop = () => setLoading(false);
+
+  // Handle Progress Bar
+  useEffect(() => {
+    router.events.on("routeChangeStart", start);
+    router.events.on("routeChangeComplete", stop);
+    router.events.on("routeChangeError", stop);
+
+    return () => {
+      router.events.off("routeChangeStart", start);
+      router.events.off("routeChangeComplete", stop);
+      router.events.off("routeChangeError", stop);
+    };
+  }, [router]);
   return (
     <ChakraProvider theme={theme}>
       <Head>
@@ -31,6 +50,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ToastProvider autoDismiss>
         <SWRConfig value={{ revalidateOnFocus: false }}>
+          <Progress size="xs" isIndeterminate={loading} />
           <Component {...pageProps} />
         </SWRConfig>
       </ToastProvider>

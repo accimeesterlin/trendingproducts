@@ -6,6 +6,8 @@ export const getProduct = /* GraphQL */ `
     getProduct(productId: $productId) {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -17,8 +19,6 @@ export const getProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -40,6 +40,8 @@ export const listProducts = /* GraphQL */ `
       items {
         productId
         title
+        createdAt
+        updatedAt
         description
         productPrice
         productUrl
@@ -51,45 +53,89 @@ export const listProducts = /* GraphQL */ `
         storeName
         videoUrl
         positiveFeedBack
-        createdAt
-        updatedAt
       }
       nextToken
     }
   }
 `;
 export const getUser = /* GraphQL */ `
-  query GetUser($id: ID!) {
-    getUser(id: $id) {
+  query GetUser($userId: ID!, $createdAt: String!) {
+    getUser(userId: $userId, createdAt: $createdAt) {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;
 export const listUsers = /* GraphQL */ `
   query ListUsers(
+    $userId: ID
+    $createdAt: ModelStringKeyConditionInput
     $filter: ModelUserFilterInput
     $limit: Int
     $nextToken: String
+    $sortDirection: ModelSortDirection
   ) {
-    listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listUsers(
+      userId: $userId
+      createdAt: $createdAt
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      sortDirection: $sortDirection
+    ) {
       items {
+        userId
         email
+        createdAt
+        updatedAt
         phone
         role
         isPlanActive
         firstName
         lastName
-        id
+      }
+      nextToken
+    }
+  }
+`;
+export const productByTitle = /* GraphQL */ `
+  query ProductByTitle(
+    $title: String!
+    $sortDirection: ModelSortDirection
+    $filter: ModelProductFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    productByTitle(
+      title: $title
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        productId
+        title
         createdAt
         updatedAt
+        description
+        productPrice
+        productUrl
+        sold
+        totalReviews
+        imageCover
+        images
+        followers
+        storeName
+        videoUrl
+        positiveFeedBack
       }
       nextToken
     }
@@ -111,15 +157,15 @@ export const userByEmail = /* GraphQL */ `
       nextToken: $nextToken
     ) {
       items {
+        userId
         email
+        createdAt
+        updatedAt
         phone
         role
         isPlanActive
         firstName
         lastName
-        id
-        createdAt
-        updatedAt
       }
       nextToken
     }

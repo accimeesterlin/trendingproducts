@@ -52,6 +52,8 @@ const ImportProductPage = () => {
           followers,
           images,
           imageCover,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         };
         await createProduct(payload);
         addToast("Product successfully imported & saved!", {

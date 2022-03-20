@@ -5,7 +5,9 @@ input AMPLIFY {
 } # FOR TESTING ONLY!
 type Product @model {
   productId: ID! @primaryKey
-  title: String!
+  title: String! @index(name: "byTitle", queryField: "productByTitle")
+  createdAt: String
+  updatedAt: String
   description: String
   productPrice: String
   productUrl: String
@@ -20,7 +22,10 @@ type Product @model {
 }
 
 type User @model {
+  userId: ID! @primaryKey(sortKeyFields: ["createdAt"])
   email: String! @index(name: "byEmail", queryField: "userByEmail")
+  createdAt: String!
+  updatedAt: String!
   phone: String!
   role: String!
   isPlanActive: Boolean!

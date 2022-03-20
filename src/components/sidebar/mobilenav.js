@@ -18,9 +18,12 @@ import {
 } from "@chakra-ui/react";
 
 import { FiMenu, FiBell, FiChevronDown } from "react-icons/fi";
+import { userStore } from "@Components/stores";
 
 export const MobileNav = ({ onOpen, ...rest }) => {
   const router = useRouter();
+
+  const user = userStore((state) => state.user);
 
   const logOut = async () => {
     try {
@@ -85,9 +88,9 @@ export const MobileNav = ({ onOpen, ...rest }) => {
                   spacing="1px"
                   ml="2"
                 >
-                  <Text fontSize="sm">Justina Clark</Text>
+                  <Text fontSize="sm">{`${user?.firstName} ${user?.lastName}`}</Text>
                   <Text fontSize="xs" color="gray.600">
-                    Admin
+                    {user?.role}
                   </Text>
                 </VStack>
                 <Box display={{ base: "none", md: "flex" }}>

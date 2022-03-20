@@ -6,6 +6,8 @@ export const onCreateProduct = /* GraphQL */ `
     onCreateProduct {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -17,8 +19,6 @@ export const onCreateProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -27,6 +27,8 @@ export const onUpdateProduct = /* GraphQL */ `
     onUpdateProduct {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -38,8 +40,6 @@ export const onUpdateProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -48,6 +48,8 @@ export const onDeleteProduct = /* GraphQL */ `
     onDeleteProduct {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -59,53 +61,51 @@ export const onDeleteProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onCreateUser = /* GraphQL */ `
   subscription OnCreateUser {
     onCreateUser {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onUpdateUser = /* GraphQL */ `
   subscription OnUpdateUser {
     onUpdateUser {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;
 export const onDeleteUser = /* GraphQL */ `
   subscription OnDeleteUser {
     onDeleteUser {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;

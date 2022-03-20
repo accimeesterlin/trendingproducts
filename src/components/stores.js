@@ -1,8 +1,17 @@
 import create from "zustand";
 
 export const userStore = create((set) => ({
-  user: null,
-  profile: {},
+  isInit: false,
+  user: {
+    firstName: "loading..",
+    lastName: "loading..",
+    role: "user",
+  },
   setUser: (user) => set({ user }),
-  setProfile: (profile) => set({ profile }),
+  setIsInit: (isInit) => set({ isInit }),
+}));
+
+export const settingStore = create((set) => ({
+  settings: {},
+  setSettings: (settings) => set({ settings }),
 }));

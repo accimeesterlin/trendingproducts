@@ -9,6 +9,8 @@ export const createProduct = /* GraphQL */ `
     createProduct(input: $input, condition: $condition) {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -20,8 +22,6 @@ export const createProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -33,6 +33,8 @@ export const updateProduct = /* GraphQL */ `
     updateProduct(input: $input, condition: $condition) {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -44,8 +46,6 @@ export const updateProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -57,6 +57,8 @@ export const deleteProduct = /* GraphQL */ `
     deleteProduct(input: $input, condition: $condition) {
       productId
       title
+      createdAt
+      updatedAt
       description
       productPrice
       productUrl
@@ -68,8 +70,6 @@ export const deleteProduct = /* GraphQL */ `
       storeName
       videoUrl
       positiveFeedBack
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -79,15 +79,15 @@ export const createUser = /* GraphQL */ `
     $condition: ModelUserConditionInput
   ) {
     createUser(input: $input, condition: $condition) {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -97,15 +97,15 @@ export const updateUser = /* GraphQL */ `
     $condition: ModelUserConditionInput
   ) {
     updateUser(input: $input, condition: $condition) {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -115,15 +115,15 @@ export const deleteUser = /* GraphQL */ `
     $condition: ModelUserConditionInput
   ) {
     deleteUser(input: $input, condition: $condition) {
+      userId
       email
+      createdAt
+      updatedAt
       phone
       role
       isPlanActive
       firstName
       lastName
-      id
-      createdAt
-      updatedAt
     }
   }
 `;

@@ -2,8 +2,22 @@ import { API, graphqlOperation } from "aws-amplify";
 import * as mutations from "@Graphql/mutations";
 import * as queries from "@Graphql/queries";
 
-export const listProducts = () =>
-  API.graphql(graphqlOperation(queries.listProducts));
+export const listProducts = (nextToken, filter) => {
+  const params = {
+    limit: 10,
+    // sortDirection: "createdAt",
+  };
+
+  if (nextToken) {
+    params.nextToken = nextToken;
+  }
+
+  if (filter) {
+    params.filter = filter;
+  }
+
+  return API.graphql(graphqlOperation(queries.listProducts, params));
+};
 
 export const createProduct = async (product) =>
   API.graphql(
@@ -25,6 +39,13 @@ export const getProduct = (productId) =>
   API.graphql(
     graphqlOperation(queries.getProduct, {
       productId,
+    })
+  );
+
+export const getProductByTitle = (title) =>
+  API.graphql(
+    graphqlOperation(queries.productByTitle, {
+      title,
     })
   );
 
