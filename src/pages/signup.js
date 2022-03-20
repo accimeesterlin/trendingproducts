@@ -38,7 +38,8 @@ export default function SignupCard() {
   const [isError, setError] = useState(false);
   const router = useRouter();
 
-  // TODO - check and see if password is the same
+  // TODO - Verify if email already exists
+  // If so, then let them know with a toast message
   const registerNewUser = async () => {
     try {
       if (password !== passwordConfirmation) {
@@ -68,6 +69,7 @@ export default function SignupCard() {
         role: "user",
         firstName,
         lastName,
+        isPlanActive: false,
       };
 
       await createUser(userPayLoad);

@@ -64,6 +64,7 @@ export const getUser = /* GraphQL */ `
       email
       phone
       role
+      isPlanActive
       firstName
       lastName
       id
@@ -83,6 +84,37 @@ export const listUsers = /* GraphQL */ `
         email
         phone
         role
+        isPlanActive
+        firstName
+        lastName
+        id
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const userByEmail = /* GraphQL */ `
+  query UserByEmail(
+    $email: String!
+    $sortDirection: ModelSortDirection
+    $filter: ModelUserFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    userByEmail(
+      email: $email
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        email
+        phone
+        role
+        isPlanActive
         firstName
         lastName
         id

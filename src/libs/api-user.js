@@ -29,8 +29,9 @@ export const getUser = (userId) =>
 
 export const getUserByEmail = (email) =>
   API.graphql(
-    graphqlOperation(queries.getUser, {
+    graphqlOperation(queries.userByEmail, {
       email,
+      limit: 1,
     })
   );
 

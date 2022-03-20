@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { listProducts } from "@Libs/api-product";
+import { getUserByEmail } from "@Libs/api-user";
 import SidebarWithHeader from "@Components/sidebar";
 
 const Dashboardpage = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(async () => {
+    getUserByEmail("info@pgecom.com").then((data) => {
+      console.log("Data: ", data);
+    });
     listProducts()
       .then(({ data }) => setProducts(data?.listProducts?.items))
       .catch(() => {
