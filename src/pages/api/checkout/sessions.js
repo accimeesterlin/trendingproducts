@@ -39,8 +39,8 @@ export default async (req, res) => {
 
   try {
     const session = await stripe.checkout.sessions.create({
-      success_url: `${origin}/plan/success?success=true`,
-      cancel_url: `${origin}/plan/cancel?canceled=true`,
+      success_url: `${origin}/admin/plan/success?success=true`,
+      cancel_url: `${origin}/admin/plan/cancel?canceled=true`,
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "subscription", // payment, setup, subscription
       subscription_data: {

@@ -35,12 +35,11 @@ export const getUserByEmail = (email) =>
     })
   );
 
-export const updateUser = (user, userId) =>
+export const updateUser = (user) =>
   API.graphql(
     graphqlOperation(mutations.updateUser, {
       input: {
         ...user,
-        updatedByField: userId,
       },
     })
   );

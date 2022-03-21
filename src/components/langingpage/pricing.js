@@ -88,7 +88,7 @@ export default function ThreeTierPricing() {
                 <Button
                   w="full"
                   type="submit"
-                  value="quarterly"
+                  value="monthly"
                   name="subscription"
                   colorScheme="red"
                   variant="outline"
@@ -169,7 +169,7 @@ export default function ThreeTierPricing() {
                   <Button
                     type="submit"
                     w="full"
-                    value="monthly"
+                    value="quarterly"
                     name="subscription"
                     colorScheme="red"
                   >

@@ -2,11 +2,30 @@ import React, { useEffect } from "react";
 import { Stack, Center, Alert, AlertIcon } from "@chakra-ui/react";
 import SidebarWithHeader from "@Components/sidebar";
 import { updateUser } from "@Libs/api-user";
+import { Auth } from "aws-amplify";
 import { userStore } from "@Components";
+import { getUserByEmail } from "@Libs";
 
 function SuccessPlanPage() {
-  const user = userStore((state) => state.user);
+  const { setUser, setIsAuthenticated } = userStore((state) => state);
   useEffect(async () => {
+    isInitializeUser();
+  }, []);
+
+  const isInitializeUser = async () => {
+    try {
+      const { attributes } = await Auth.currentAuthenticatedUser();
+      const { data } = await getUserByEmail(attributes?.email);
+      const currentUser = data?.userByEmail?.items[0];
+      patchUser(currentUser);
+      setUser(currentUser);
+      setIsAuthenticated(true);
+    } catch (error) {
+      setIsAuthenticated(false);
+    }
+  };
+
+  const patchUser = async (user) => {
     const userPayLoad = {
       userId: user.userId,
       email: user.email,
@@ -19,10 +38,15 @@ function SuccessPlanPage() {
       updatedAt: new Date(),
     };
 
-    const { userId } = user;
+    try {
+      const { data } = await updateUser(userPayLoad);
+      const updatedUser = data?.updateUser;
+      setUser(updatedUser);
+    } catch (error) {
+      console.log("Error updating your profile. Please contact an admin");
+    }
+  };
 
-    await updateUser(userPayLoad, userId);
-  }, []);
   return (
     <SidebarWithHeader className="dashboard" pageName="Add Product">
       <Center>
