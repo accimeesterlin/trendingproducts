@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import { Stack, Center, Alert, AlertIcon } from "@chakra-ui/react";
+import { Auth } from "aws-amplify";
 import SidebarWithHeader from "@Components/sidebar";
 import { updateUser } from "@Libs/api-user";
-import { Auth } from "aws-amplify";
+import { useRouter } from "next/router";
 import { userStore } from "@Components";
 import { getUserByEmail } from "@Libs";
 
 function SuccessPlanPage() {
   const { setUser, setIsAuthenticated } = userStore((state) => state);
+  const router = useRouter();
   useEffect(async () => {
     isInitializeUser();
   }, []);
@@ -42,6 +44,9 @@ function SuccessPlanPage() {
       const { data } = await updateUser(userPayLoad);
       const updatedUser = data?.updateUser;
       setUser(updatedUser);
+
+      // TODO - move to dashboard once dashboard is built
+      router.push("/admin/product");
     } catch (error) {
       console.log("Error updating your profile. Please contact an admin");
     }
