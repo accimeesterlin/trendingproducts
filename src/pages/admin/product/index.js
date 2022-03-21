@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
-import { listProducts, getProductByTitle } from "@Libs/api-product";
+import { listProducts } from "@Libs/api-product";
 import SidebarWithHeader from "@Components/sidebar";
 import ProductCard from "@Components/product/productcard";
 

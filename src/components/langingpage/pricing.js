@@ -37,8 +37,7 @@ export default function ThreeTierPricing() {
           Plans that fit your need
         </Heading>
         <Text fontSize="lg" color="gray.500">
-          Start with 14-day free trial. No credit card needed. Cancel at
-          anytime.
+          Start with 14-day free trial. Cancel at anytime.
         </Text>
       </VStack>
       <Stack
@@ -51,17 +50,17 @@ export default function ThreeTierPricing() {
         <PriceWrapper>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
-              Hobby
+              Monthly
             </Text>
             <HStack justifyContent="center">
               <Text fontSize="3xl" fontWeight="600">
                 $
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                79
+                9.99
               </Text>
               <Text fontSize="3xl" color="gray.500">
-                /month
+                /m
               </Text>
             </HStack>
           </Box>
@@ -73,21 +72,30 @@ export default function ThreeTierPricing() {
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                unlimited build minutes
+                unlimited products
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                Lorem, ipsum dolor.
+                weekly upload
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
+                product analysis
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-              <Button w="full" colorScheme="red" variant="outline">
-                Start trial
-              </Button>
+              <form action="/api/checkout/sessions" method="POST">
+                <Button
+                  w="full"
+                  type="submit"
+                  value="quarterly"
+                  name="subscription"
+                  colorScheme="red"
+                  variant="outline"
+                >
+                  Start trial
+                </Button>
+              </form>
             </Box>
           </VStack>
         </PriceWrapper>
@@ -115,17 +123,17 @@ export default function ThreeTierPricing() {
             </Box>
             <Box py={4} px={12}>
               <Text fontWeight="500" fontSize="2xl">
-                Growth
+                Quarterly
               </Text>
               <HStack justifyContent="center">
                 <Text fontSize="3xl" fontWeight="600">
                   $
                 </Text>
                 <Text fontSize="5xl" fontWeight="900">
-                  149
+                  27
                 </Text>
                 <Text fontSize="3xl" color="gray.500">
-                  /month
+                  /q
                 </Text>
               </HStack>
             </Box>
@@ -137,15 +145,15 @@ export default function ThreeTierPricing() {
               <List spacing={3} textAlign="start" px={12}>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  unlimited build minutes
+                  unlimited products
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Lorem, ipsum dolor.
+                  weekly upload
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
+                  product analysis
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
@@ -157,9 +165,17 @@ export default function ThreeTierPricing() {
                 </ListItem>
               </List>
               <Box w="80%" pt={7}>
-                <Button w="full" colorScheme="red">
-                  Start trial
-                </Button>
+                <form action="/api/checkout/sessions" method="POST">
+                  <Button
+                    type="submit"
+                    w="full"
+                    value="monthly"
+                    name="subscription"
+                    colorScheme="red"
+                  >
+                    Start trial
+                  </Button>
+                </form>
               </Box>
             </VStack>
           </Box>
@@ -167,17 +183,17 @@ export default function ThreeTierPricing() {
         <PriceWrapper>
           <Box py={4} px={12}>
             <Text fontWeight="500" fontSize="2xl">
-              Scale
+              Yearly
             </Text>
             <HStack justifyContent="center">
               <Text fontSize="3xl" fontWeight="600">
                 $
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                349
+                89.91
               </Text>
               <Text fontSize="3xl" color="gray.500">
-                /month
+                /y
               </Text>
             </HStack>
           </Box>
@@ -189,21 +205,30 @@ export default function ThreeTierPricing() {
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                unlimited build minutes
+                unlimited products
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                Lorem, ipsum dolor.
+                weekly upload
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
+                product analysis
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-              <Button w="full" colorScheme="red" variant="outline">
-                Start trial
-              </Button>
+              <form action="/api/checkout/sessions" method="POST">
+                <Button
+                  w="full"
+                  type="submit"
+                  colorScheme="red"
+                  value="yearly"
+                  name="subscription"
+                  variant="outline"
+                >
+                  Start trial
+                </Button>
+              </form>
             </Box>
           </VStack>
         </PriceWrapper>

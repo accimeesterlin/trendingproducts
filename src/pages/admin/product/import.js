@@ -77,6 +77,7 @@ const ImportProductPage = () => {
           <Input
             placeholder="Ex: https://www.aliexpress.com/item/33005594727.html"
             id="text"
+            value={url}
             onChange={({ target }) => setUrl(target.value)}
             type="text"
           />
