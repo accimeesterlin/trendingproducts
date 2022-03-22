@@ -19,10 +19,10 @@ export const NavItem = ({ icon, children, name, url, ...rest }) => {
         borderRadius="lg"
         role="group"
         cursor="pointer"
-        bg={path === url ? "cyan.400" : null}
+        bg={path === url ? "#010080" : null}
         color={path === url ? "white" : null}
         _hover={{
-          bg: "cyan.400",
+          bg: "#010080",
           color: "white",
         }}
         {...rest}
