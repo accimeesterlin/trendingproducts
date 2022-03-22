@@ -26,9 +26,9 @@ type User @model {
   email: String! @index(name: "byEmail", queryField: "userByEmail")
   createdAt: String!
   updatedAt: String!
-  phone: String!
   role: String!
   isPlanActive: Boolean!
+  phone: String
   firstName: String
   lastName: String
 }

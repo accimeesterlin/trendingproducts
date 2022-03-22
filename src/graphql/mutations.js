@@ -83,9 +83,9 @@ export const createUser = /* GraphQL */ `
       email
       createdAt
       updatedAt
-      phone
       role
       isPlanActive
+      phone
       firstName
       lastName
     }
@@ -101,9 +101,9 @@ export const updateUser = /* GraphQL */ `
       email
       createdAt
       updatedAt
-      phone
       role
       isPlanActive
+      phone
       firstName
       lastName
     }
@@ -119,9 +119,9 @@ export const deleteUser = /* GraphQL */ `
       email
       createdAt
       updatedAt
-      phone
       role
       isPlanActive
+      phone
       firstName
       lastName
     }

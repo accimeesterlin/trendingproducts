@@ -6,6 +6,7 @@ import {
   Input,
   Flex,
   Button,
+  Center,
 } from "@chakra-ui/react";
 
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
@@ -89,6 +90,29 @@ function ProductPage({ products: result, nextToken: token }) {
     }
   };
 
+  const renderNext = () => (
+    <Box>
+      <Flex justifyContent="flex-start" justifyItems="center" spacing={4}>
+        <Button
+          leftIcon={<ArrowBackIcon />}
+          colorScheme="teal"
+          variant="outline"
+          isLoading={previousLoading}
+          onClick={() => previousProductList()}
+          m="10px"
+        />
+        <Button
+          rightIcon={<ArrowForwardIcon />}
+          colorScheme="teal"
+          isLoading={nextLoading}
+          variant="outline"
+          m="10px"
+          onClick={() => nextProductList()}
+        />
+      </Flex>
+    </Box>
+  );
+
   return (
     <SidebarWithHeader className="dashboard" pageName="Add Product">
       <Box bg="white" p="10px">
@@ -104,6 +128,7 @@ function ProductPage({ products: result, nextToken: token }) {
           <Button
             onClick={handleSubmit}
             mt={4}
+            bg="#010080"
             colorScheme="teal"
             isLoading={loading}
             type="submit"
@@ -112,31 +137,16 @@ function ProductPage({ products: result, nextToken: token }) {
           </Button>
         </FormControl>
       </Box>
-      <Box>
-        <Flex justifyContent="flex-start" justifyItems="center" spacing={4}>
-          <Button
-            leftIcon={<ArrowBackIcon />}
-            colorScheme="teal"
-            variant="outline"
-            isLoading={previousLoading}
-            onClick={() => previousProductList()}
-            m="10px"
-          />
-          <Button
-            rightIcon={<ArrowForwardIcon />}
-            colorScheme="teal"
-            isLoading={nextLoading}
-            variant="outline"
-            m="10px"
-            onClick={() => nextProductList()}
-          />
-        </Flex>
-      </Box>
+
+      {renderNext()}
+
       <Box>
         <Flex flexWrap="wrap" justifyContent="space-around">
           {renderProductCard()}
         </Flex>
       </Box>
+
+      <Center>{renderNext()}</Center>
     </SidebarWithHeader>
   );
 }

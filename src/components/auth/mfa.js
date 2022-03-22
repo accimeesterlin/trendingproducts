@@ -23,24 +23,7 @@ export function MultiFactor({ username }) {
   const [isError, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-  const [view, setView] = useState("");
   const { addToast } = useToasts();
-
-  // TODO - turn this into a reusable function
-  const actions = async () => {
-    try {
-      const user = await Auth.currentAuthenticatedUser();
-      if (user) {
-        router.push("/admin/dashboard");
-      }
-    } catch (error) {
-      setView("multifactor");
-    }
-  };
-
-  useEffect(() => {
-    actions();
-  }, []);
 
   const handleSubmit = () => {
     confirmSignUp();
@@ -87,10 +70,6 @@ export function MultiFactor({ username }) {
     }
   };
 
-  if (view !== "multifactor") {
-    return null;
-  }
-
   return (
     <Flex
       minH="100vh"
@@ -134,7 +113,7 @@ export function MultiFactor({ username }) {
             bg="blue.400"
             color="white"
             isLoading={isLoading}
-            onClick={confirmSignUp}
+            onClick={() => confirmSignUp()}
             _hover={{
               bg: "blue.500",
             }}

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { useRouter } from "next/router";
-import absoluteUrl from "next-absolute-url";
 import axios from "axios";
 import { userStore } from "@Components/stores";
 import { Pricing } from "@Components/langingpage";
@@ -12,13 +11,10 @@ const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
-function CheckoutPage({ url: domain, urlOrigin }) {
-  const [origin, setOrigin] = useState(urlOrigin);
+function CheckoutPage() {
+  const [origin, setOrigin] = useState("");
   const { user, isAuthenticated } = userStore((state) => state);
   const router = useRouter();
-
-  console.log("Url Origin: ", urlOrigin);
-  console.log("Domain: ", domain);
 
   const getCheckoutSessionUrl = async (subscription) => {
     const { pathname } = router;
@@ -61,17 +57,5 @@ function CheckoutPage({ url: domain, urlOrigin }) {
 
   return <Pricing getCheckoutSessionUrl={getCheckoutSessionUrl} />;
 }
-
-export const getServerSideProps = ({ req }) => {
-  const { referer } = req?.headers;
-  const { origin } = absoluteUrl(req);
-
-  return {
-    props: {
-      url: referer,
-      urlOrigin: origin,
-    },
-  };
-};
 
 export default CheckoutPage;

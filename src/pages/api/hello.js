@@ -2,5 +2,5 @@
 
 export default (req, res) => {
   res.statusCode = 200;
-  res.json({ name: process.env });
+  res.json({ name: "Hey, hello from the helo route" });
 };

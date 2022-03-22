@@ -23,7 +23,6 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import { route } from "next/dist/next-server/server/router";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -57,14 +56,16 @@ export default function WithSubnavigation() {
             aria-label="Toggle Navigation"
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily="heading"
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+        <Flex
+          flex={{ base: 1 }}
+          alignItems="center"
+          justify={{ base: "center", md: "start" }}
+        >
+          <img
+            width="40px"
+            src="https://pgecom.com/store/1018/main_logo.JPG"
+            alt=""
+          />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -92,7 +93,7 @@ export default function WithSubnavigation() {
             fontSize="sm"
             fontWeight={600}
             color="white"
-            bg="pink.400"
+            bg="#010080"
             onClick={() => router.push("/signup")}
             _hover={{
               bg: "pink.300",
@@ -166,6 +167,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => (
     display="block"
     p={2}
     rounded="md"
+    isExternal
     _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
   >
     <Stack direction="row" align="center">
@@ -249,7 +251,7 @@ const MobileNavItem = ({ label, children, href }) => {
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link key={child.label} py={2} href={child.href} isExternal>
                 {child.label}
               </Link>
             ))}
@@ -261,41 +263,31 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Inspiration",
+    label: "Home",
+  },
+  {
+    label: "Resources",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
+        label: "Facebook Group",
+        subLabel:
+          "Connect with like minded sellers and see what's working and stay on the cutting edge of the Ecom world",
+        href: "https://www.facebook.com/groups/196555738106924",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
+        label: "YouTube Channel",
+        subLabel:
+          "Weekly videos about E-commerce, marketing dropshipping, mindset, success and more!",
+        href: "https://www.youtube.com/c/PGecomHT",
       },
     ],
   },
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    label: "Features",
+    href: "#feature",
   },
   {
-    label: "Learn Design",
-    href: "#",
-  },
-  {
-    label: "Hire Designers",
-    href: "#",
+    label: "Pricing",
+    href: "#pricing",
   },
 ];

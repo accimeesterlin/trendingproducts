@@ -23,22 +23,23 @@ const Feature = ({ title, text, icon }) => (
 
 export default function SimpleThreeColumns() {
   return (
-    <Box p={4}>
+    <Box p={4} id="feature">
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcAssistant} w={10} h={10} />}
-          title="Lifetime Support"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+          title="Discover In Demand Products"
+          text="We are manually adding winning products, every day.
+          Stop wasting money on bad products!"
         />
         <Feature
           icon={<Icon as={FcDonate} w={10} h={10} />}
-          title="Unlimited Donations"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+          title="Save Products For Later"
+          text="Build your winning product testing library. Click once on the heart on the product page and it will be saved to your “Saved” tab"
         />
         <Feature
           icon={<Icon as={FcInTransit} w={10} h={10} />}
-          title="Instant Delivery"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+          title="Search Products"
+          text="Type in the name of a product or search it by AliExpress URL to let us analyze all the sexy stats"
         />
       </SimpleGrid>
     </Box>

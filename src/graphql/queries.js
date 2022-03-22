@@ -65,9 +65,9 @@ export const getUser = /* GraphQL */ `
       email
       createdAt
       updatedAt
-      phone
       role
       isPlanActive
+      phone
       firstName
       lastName
     }
@@ -95,9 +95,9 @@ export const listUsers = /* GraphQL */ `
         email
         createdAt
         updatedAt
-        phone
         role
         isPlanActive
+        phone
         firstName
         lastName
       }
@@ -161,9 +161,9 @@ export const userByEmail = /* GraphQL */ `
         email
         createdAt
         updatedAt
-        phone
         role
         isPlanActive
+        phone
         firstName
         lastName
       }

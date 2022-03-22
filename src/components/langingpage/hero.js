@@ -11,7 +11,11 @@ import {
   createIcon,
 } from "@chakra-ui/react";
 
+import { useRouter } from "next/router";
+
 export default function CallToActionWithAnnotation() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -34,14 +38,13 @@ export default function CallToActionWithAnnotation() {
             lineHeight="110%"
           >
             Trending Products <br />
-            <Text as="span" color="green.400">
-              your audience
+            <Text as="span" color="#010080">
+              Just For You
             </Text>
           </Heading>
           <Text color="gray.500">
-            Monetize your content by charging your most loyal readers and reward
-            them loyalty points. Give back to your loyal readers by granting
-            them access to your pre-releases and sneak-peaks.
+            Find real winning products in 10 seconds flat by using predictive
+            dropshipping A.I. technology
           </Text>
           <Stack
             direction="column"
@@ -52,16 +55,22 @@ export default function CallToActionWithAnnotation() {
           >
             <Button
               colorScheme="green"
-              bg="green.400"
+              bg="#010080"
               rounded="full"
+              onclick={() => router.push("/signup")}
               px={6}
               _hover={{
-                bg: "green.500",
+                bg: "#010080",
               }}
             >
               Get Started
             </Button>
-            <Button variant="link" colorScheme="blue" size="sm">
+            <Button
+              onclick={() => router.push("/signup")}
+              variant="link"
+              colorScheme="blue"
+              size="sm"
+            >
               Learn more
             </Button>
             <Box>
@@ -81,7 +90,7 @@ export default function CallToActionWithAnnotation() {
                 top="-15px"
                 transform="rotate(10deg)"
               >
-                Starting at $15/mo
+                Starting at $9.99/mo
               </Text>
             </Box>
           </Stack>

@@ -31,7 +31,7 @@ function PriceWrapper({ children }) {
 
 export default function ThreeTierPricing({ getCheckoutSessionUrl }) {
   return (
-    <Box py={12}>
+    <Box py={12} id="pricing">
       <VStack spacing={2} textAlign="center">
         <Heading as="h1" fontSize="4xl">
           Plans that fit your need
@@ -156,11 +156,11 @@ export default function ThreeTierPricing({ getCheckoutSessionUrl }) {
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
+                  save products for later
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
+                  search products
                 </ListItem>
               </List>
               <Box w="80%" pt={7}>

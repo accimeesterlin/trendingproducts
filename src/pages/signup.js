@@ -56,7 +56,6 @@ export default function SignupCard() {
         password,
         attributes: {
           email, // optional
-          phone_number: `+${phone}`,
           // Other custom attributes...
         },
         validationData: [], // optional
