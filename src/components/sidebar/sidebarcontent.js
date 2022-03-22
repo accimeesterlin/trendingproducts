@@ -15,8 +15,9 @@ export const SidebarContent = ({ onClose, ...rest }) => {
   const user = userStore((state) => state.user);
 
   const LinkItems = [
-    { name: "Home", icon: FiHome, url: "/admin/dashboard" },
-    { name: "Trending", icon: FiTrendingUp, url: "/admin/trending" },
+    // TODO - under construction
+    // { name: "Home", icon: FiHome, url: "/admin/dashboard" },
+    // { name: "Trending", icon: FiTrendingUp, url: "/admin/trending" },
     { name: "Products", icon: FiCompass, url: "/admin/product" },
   ];
 

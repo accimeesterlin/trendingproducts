@@ -52,6 +52,10 @@ export default function ThreeTierPricing() {
     }
 
     try {
+      if (pathname === "/") {
+        return router.push("/signup");
+      }
+
       const { data } = await axios(url);
       window.open(data?.url);
     } catch (error) {

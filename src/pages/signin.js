@@ -42,7 +42,7 @@ export default function SimpleCard() {
       });
       if (user) {
         setIsloading(false);
-        router.push("/admin/dashboard");
+        router.push("/admin/product");
       }
     } catch (error) {
       setIsloading(false);
