@@ -44,7 +44,7 @@ export default async (req, res) => {
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "subscription", // payment, setup, subscription
       subscription_data: {
-        trial_period_days: 14,
+        trial_period_days: process.env.TRIAL_PERIOD_DAYS || 7,
       },
     });
     return res.json({ url: session?.url });

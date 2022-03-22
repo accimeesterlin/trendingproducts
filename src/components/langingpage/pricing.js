@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import axios from "axios";
 import {
   Box,
   Stack,
@@ -29,7 +31,42 @@ function PriceWrapper({ children }) {
   );
 }
 
-export default function ThreeTierPricing({ getCheckoutSessionUrl }) {
+export default function ThreeTierPricing() {
+  const [origin, setOrigin] = useState("");
+  const router = useRouter();
+
+  const getCheckoutSessionUrl = async (subscription) => {
+    const { pathname } = router;
+    let url = "/api/checkout/sessions?";
+
+    if (pathname) {
+      url += `path=${pathname}&`;
+    }
+
+    if (origin) {
+      url += `domain=${origin}&`;
+    }
+
+    if (subscription) {
+      url += `subscription=${subscription}&`;
+    }
+
+    try {
+      const { data } = await axios(url);
+      window.open(data?.url);
+    } catch (error) {
+      console.log("Error: ", error);
+    }
+  };
+
+  useEffect(async () => {
+    const { origin: locationOrigin } = window.location;
+
+    if (locationOrigin) {
+      setOrigin(locationOrigin);
+    }
+  }, [origin]);
+
   return (
     <Box py={12} id="pricing">
       <VStack spacing={2} textAlign="center">
