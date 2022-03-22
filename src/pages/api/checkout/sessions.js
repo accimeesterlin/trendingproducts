@@ -8,16 +8,17 @@ const handleSubscription = (subscription) => {
   let priceId;
   switch (subscription) {
     case "monthly":
-      priceId = "price_1KfdPbEDjZxHmxzHyohf5Rfa";
+      priceId = process.env.MONTHLY_PRICING || "price_1KfdPbEDjZxHmxzHyohf5Rfa";
       break;
     case "quarterly":
-      priceId = "price_1KffPvEDjZxHmxzH2AdaOrJw";
+      priceId =
+        process.env.QUATERLY_PRICING || "price_1KffPvEDjZxHmxzH2AdaOrJw";
       break;
     case "yearly":
-      priceId = "price_1KfdSZEDjZxHmxzHA9mUmeIl";
+      priceId = process.env.YEARLY_PRICING || "price_1KfdSZEDjZxHmxzHA9mUmeIl";
       break;
     default:
-      priceId = "price_1KfdPbEDjZxHmxzHyohf5Rfa";
+      priceId = process.env.MONTHLY_PRICING || "price_1KfdPbEDjZxHmxzHyohf5Rfa";
       break;
   }
 
