@@ -28,7 +28,7 @@ function CheckoutPage({ url: domain, urlOrigin }) {
       url += `path=${pathname}&`;
     }
 
-    if (domain) {
+    if (origin) {
       url += `domain=${origin}&`;
     }
 
