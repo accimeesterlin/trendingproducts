@@ -97,6 +97,7 @@ function ProductPage({ products: result, nextToken: token }) {
           leftIcon={<ArrowBackIcon />}
           colorScheme="teal"
           variant="outline"
+          color="#010080"
           isLoading={previousLoading}
           onClick={() => previousProductList()}
           m="10px"
@@ -104,6 +105,7 @@ function ProductPage({ products: result, nextToken: token }) {
         <Button
           rightIcon={<ArrowForwardIcon />}
           colorScheme="teal"
+          color="#010080"
           isLoading={nextLoading}
           variant="outline"
           m="10px"
