@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { useRouter } from "next/router";
 import absoluteUrl from "next-absolute-url";
@@ -12,9 +12,13 @@ const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
-function CheckoutPage({ url: domain, origin }) {
+function CheckoutPage({ url: domain, urlOrigin }) {
+  const [origin, setOrigin] = useState(urlOrigin);
   const { user, isAuthenticated } = userStore((state) => state);
   const router = useRouter();
+
+  console.log("Url Origin: ", urlOrigin);
+  console.log("Domain: ", domain);
 
   const getCheckoutSessionUrl = async (subscription) => {
     const { pathname } = router;
@@ -41,7 +45,11 @@ function CheckoutPage({ url: domain, origin }) {
   };
 
   useEffect(async () => {
-    console.log("Location: ", window.location);
+    const { origin: locationOrigin } = window.location;
+
+    if (locationOrigin) {
+      setOrigin(locationOrigin);
+    }
     if (!isAuthenticated) {
       router.push("/signin");
     }
@@ -61,7 +69,7 @@ export const getServerSideProps = ({ req }) => {
   return {
     props: {
       url: referer,
-      origin,
+      urlOrigin: origin,
     },
   };
 };
