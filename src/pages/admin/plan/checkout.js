@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { useRouter } from "next/router";
+import absoluteUrl from "next-absolute-url";
+import axios from "axios";
 import { userStore } from "@Components/stores";
 import { Pricing } from "@Components/langingpage";
 
@@ -10,11 +12,36 @@ const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
-function CheckoutPage() {
+function CheckoutPage({ url: domain, origin }) {
   const { user, isAuthenticated } = userStore((state) => state);
   const router = useRouter();
 
+  const getCheckoutSessionUrl = async (subscription) => {
+    const { pathname } = router;
+    let url = "/api/checkout/sessions?";
+
+    if (pathname) {
+      url += `path=${pathname}&`;
+    }
+
+    if (domain) {
+      url += `domain=${origin}&`;
+    }
+
+    if (subscription) {
+      url += `subscription=${subscription}&`;
+    }
+
+    try {
+      const { data } = await axios(url);
+      window.open(data?.url);
+    } catch (error) {
+      console.log("Error: ", error);
+    }
+  };
+
   useEffect(async () => {
+    console.log("Location: ", window.location);
     if (!isAuthenticated) {
       router.push("/signin");
     }
@@ -24,6 +51,19 @@ function CheckoutPage() {
     return null;
   }
 
-  return <Pricing />;
+  return <Pricing getCheckoutSessionUrl={getCheckoutSessionUrl} />;
 }
+
+export const getServerSideProps = ({ req }) => {
+  const { referer } = req?.headers;
+  const { origin } = absoluteUrl(req);
+
+  return {
+    props: {
+      url: referer,
+      origin,
+    },
+  };
+};
+
 export default CheckoutPage;

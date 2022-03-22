@@ -25,32 +25,30 @@ const handleSubscription = (subscription) => {
 };
 
 export default async (req, res) => {
-  const origin = req?.headers?.origin;
-  if (req.method !== "POST") {
-    return res.status(400).json({ message: "Request Method should be 'Post'" });
+  const { subscription, domain, path } = req?.query;
+
+  if (!domain || !path) {
+    return res.json({
+      message: "'domain' and 'path' must be provided as query string",
+      statusCode: 403,
+    });
   }
 
-  if (!req?.headers?.referer.includes("plan")) {
-    return res.redirect("/signup");
-  }
-
-  const { subscription } = req.body;
   const priceId = handleSubscription(subscription);
 
   try {
     const session = await stripe.checkout.sessions.create({
-      success_url: `${origin}/admin/plan/success?success=true`,
-      cancel_url: `${origin}/admin/plan/cancel?canceled=true`,
+      success_url: `${domain}/admin/plan/success?success=true`,
+      cancel_url: `${domain}/admin/plan/cancel?canceled=true`,
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "subscription", // payment, setup, subscription
       subscription_data: {
         trial_period_days: 14,
       },
     });
-
-    return res.redirect(303, session?.url);
+    return res.json({ url: session?.url });
   } catch (error) {
-    return res.json({
+    return res.status(500).json({
       message: error?.raw?.message,
       type: error.raw.type,
       statusCode: error.raw.statusCode,

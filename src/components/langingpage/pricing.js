@@ -29,7 +29,7 @@ function PriceWrapper({ children }) {
   );
 }
 
-export default function ThreeTierPricing() {
+export default function ThreeTierPricing({ getCheckoutSessionUrl }) {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
@@ -84,18 +84,17 @@ export default function ThreeTierPricing() {
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-              <form action="/api/checkout/sessions" method="POST">
-                <Button
-                  w="full"
-                  type="submit"
-                  value="monthly"
-                  name="subscription"
-                  colorScheme="red"
-                  variant="outline"
-                >
-                  Start trial
-                </Button>
-              </form>
+              <Button
+                w="full"
+                type="submit"
+                value="monthly"
+                name="subscription"
+                colorScheme="red"
+                variant="outline"
+                onClick={() => getCheckoutSessionUrl("monthly")}
+              >
+                Start trial
+              </Button>
             </Box>
           </VStack>
         </PriceWrapper>
@@ -165,17 +164,16 @@ export default function ThreeTierPricing() {
                 </ListItem>
               </List>
               <Box w="80%" pt={7}>
-                <form action="/api/checkout/sessions" method="POST">
-                  <Button
-                    type="submit"
-                    w="full"
-                    value="quarterly"
-                    name="subscription"
-                    colorScheme="red"
-                  >
-                    Start trial
-                  </Button>
-                </form>
+                <Button
+                  type="submit"
+                  w="full"
+                  value="quarterly"
+                  onClick={() => getCheckoutSessionUrl("quarterly")}
+                  name="subscription"
+                  colorScheme="red"
+                >
+                  Start trial
+                </Button>
               </Box>
             </VStack>
           </Box>
@@ -217,18 +215,17 @@ export default function ThreeTierPricing() {
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-              <form action="/api/checkout/sessions" method="POST">
-                <Button
-                  w="full"
-                  type="submit"
-                  colorScheme="red"
-                  value="yearly"
-                  name="subscription"
-                  variant="outline"
-                >
-                  Start trial
-                </Button>
-              </form>
+              <Button
+                w="full"
+                type="submit"
+                colorScheme="red"
+                onClick={() => getCheckoutSessionUrl("yearly")}
+                value="yearly"
+                name="subscription"
+                variant="outline"
+              >
+                Start trial
+              </Button>
             </Box>
           </VStack>
         </PriceWrapper>

@@ -64,7 +64,9 @@ function ProductPage({ products: result, nextToken: token }) {
       return null;
     }
 
-    return products.map((item) => <ProductCard item={item} />);
+    return products.map((item) => (
+      <ProductCard item={item} key={item?.productId} />
+    ));
   };
 
   const handleSubmit = async (event) => {
@@ -79,7 +81,6 @@ function ProductPage({ products: result, nextToken: token }) {
       };
       const { data } = await listProducts(null, filter);
       const items = data?.productByTitle?.items;
-      console.log("Data: ", data);
       console.log("Items: ", items);
       setLoading(false);
     } catch (error) {
