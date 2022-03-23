@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { withSentry } from "@sentry/nextjs";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2020-08-27",
@@ -25,7 +26,7 @@ const handleSubscription = (subscription) => {
   return priceId;
 };
 
-export default async (req, res) => {
+const handler = async (req, res) => {
   const { subscription, domain, path } = req?.query;
 
   if (!domain || !path) {
@@ -56,3 +57,5 @@ export default async (req, res) => {
     });
   }
 };
+
+export default withSentry(handler);
