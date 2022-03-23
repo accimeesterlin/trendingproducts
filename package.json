@@ -21,6 +21,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@hookform/error-message": "^2.0.0",
+    "@sentry/nextjs": "^6.19.1",
     "@stripe/stripe-js": "^1.25.0",
     "aws-amplify": "^3.3.27",
     "aws-amplify-react": "^5.1.9",
