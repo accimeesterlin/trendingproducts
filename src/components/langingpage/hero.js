@@ -57,7 +57,7 @@ export default function CallToActionWithAnnotation() {
               colorScheme="green"
               bg="#010080"
               rounded="full"
-              onclick={() => router.push("/signup")}
+              onClick={() => router.push("/signup")}
               px={6}
               _hover={{
                 bg: "#010080",
@@ -66,7 +66,7 @@ export default function CallToActionWithAnnotation() {
               Get Started
             </Button>
             <Button
-              onclick={() => router.push("/signup")}
+              onClick={() => router.push("/signup")}
               variant="link"
               colorScheme="blue"
               size="sm"

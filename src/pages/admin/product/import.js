@@ -85,6 +85,7 @@ const ImportProductPage = () => {
 
         <Button
           m={4}
+          bg="#010080"
           isLoading={isLoading}
           onClick={handleSubmit}
           colorScheme="blue"

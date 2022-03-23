@@ -29,7 +29,7 @@ export const SidebarContent = ({ onClose, ...rest }) => {
     });
   }
 
-  LinkItems.push({ name: "Settings", icon: FiSettings, url: "/admin/setting" });
+  // LinkItems.push({ name: "Settings", icon: FiSettings, url: "/admin/setting" });
 
   return (
     <Box

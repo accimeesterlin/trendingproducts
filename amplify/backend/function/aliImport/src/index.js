@@ -11,14 +11,9 @@ const chromium = require("chrome-aws-lambda");
 const numeral = require("numeral");
 const cheerio = require("cheerio");
 
-const { log } = console;
-
 exports.handler = async (event) => {
-  console.log(`EVENT: ${JSON.stringify(event)}`);
-
   try {
     const { aliUrl } = event?.queryStringParameters;
-    log("ALI URL: ", aliUrl);
 
     if (!aliUrl) {
       return {

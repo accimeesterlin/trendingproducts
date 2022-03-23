@@ -5,10 +5,15 @@ import { SWRConfig } from "swr";
 import { ToastProvider } from "react-toast-notifications";
 import Amplify from "aws-amplify";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 
 import awsconfig from "../aws-exports";
 
 Amplify.configure(awsconfig);
+
+const CrispWithNoSSR = dynamic(() => import("../components/crispchatbox"), {
+  ssr: false,
+});
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -54,6 +59,8 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </SWRConfig>
       </ToastProvider>
+
+      <CrispWithNoSSR />
     </ChakraProvider>
   );
 }
