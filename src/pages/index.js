@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React from "react";
 
 import { Container } from "@chakra-ui/react";
@@ -15,6 +16,14 @@ import Footer from "@Components/common/footer";
 export function HomePage() {
   return (
     <Container maxW="container.xl">
+      <button
+        type="button"
+        onClick={() => {
+          throw new Error("Sentry Frontend Error");
+        }}
+      >
+        Throw error
+      </button>
       <NavBar />
       <Hero />
       <Feature />
