@@ -22,15 +22,7 @@ export default function SidebarWithHeader({ children }) {
 
   // TODO - protect the admin route so user doesn't go there
   // itinializing the app
-  useEffect(async () => {
-    if (isAuthenticated && !user?.isPlanActive) {
-      router.push("/admin/plan/checkout");
-    }
-
-    if (!isAuthenticated) {
-      isInitializeUser();
-    }
-  }, [user]);
+  useEffect(async () => {}, [user]);
 
   const isInitializeUser = async () => {
     try {
@@ -40,6 +32,7 @@ export default function SidebarWithHeader({ children }) {
       setUser(currentUser);
       setIsAuthenticated(true);
     } catch (error) {
+      console.log("Error: ", error);
       setIsAuthenticated(false);
       router.push("/signin");
     }

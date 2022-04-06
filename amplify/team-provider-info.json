@@ -12,14 +12,14 @@
       "AmplifyAppId": "d3qkrs8otgwp77"
     },
     "categories": {
-      "auth": {
-        "trendingproducts56b12231": {}
-      },
       "function": {
         "aliImport": {
           "deploymentBucketName": "amplify-trendingproducts-dev-230531-deployment",
-          "s3Key": "amplify-builds/aliImport-3759514436494b746d52-build.zip"
+          "s3Key": "amplify-builds/aliImport-56774958425866744f5a-build.zip"
         }
+      },
+      "auth": {
+        "trendingproducts56b12231": {}
       }
     }
   }

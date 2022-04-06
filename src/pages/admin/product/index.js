@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FormControl,
   Box,
@@ -14,8 +14,9 @@ import { listProducts } from "@Libs/api-product";
 import SidebarWithHeader from "@Components/sidebar";
 import ProductCard from "@Components/product/productcard";
 
-function ProductPage({ products: result, nextToken: token }) {
+function ProductPage() {
   const [searchInput, setSearchInput] = useState("");
+  const [nextToken, setNextToken] = useState("");
 
   // Loading state of the next/previous button
   const [nextLoading, setNextLoading] = useState(false);
@@ -24,11 +25,19 @@ function ProductPage({ products: result, nextToken: token }) {
   // Submit
   const [loading, setLoading] = useState(false);
 
-  const [products, setProducts] = useState(result || []);
+  const [products, setProducts] = useState([]);
 
   // Token
-  const [nextToken, setNextToken] = useState(token);
   const [previousToken, setPreviousToken] = useState(nextToken);
+
+  useEffect(async () => {
+    const { data } = await listProducts();
+
+    const items = data?.listProducts.items;
+    const tokenData = data?.listProducts?.nextToken;
+    setProducts(items);
+    setNextToken(tokenData);
+  }, []);
 
   const nextProductList = async () => {
     try {
@@ -151,19 +160,6 @@ function ProductPage({ products: result, nextToken: token }) {
       <Center>{renderNext()}</Center>
     </SidebarWithHeader>
   );
-}
-
-export async function getStaticProps() {
-  const { data } = await listProducts();
-  const items = data?.listProducts.items;
-  const nextToken = data?.listProducts?.nextToken;
-
-  return {
-    props: {
-      products: items || [],
-      nextToken,
-    },
-  };
 }
 
 export default ProductPage;

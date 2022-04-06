@@ -40,6 +40,7 @@ export default function SimpleCard() {
         appearance: "success",
         autoDismiss: true,
       });
+
       if (user) {
         setIsloading(false);
         router.push("/admin/product");
